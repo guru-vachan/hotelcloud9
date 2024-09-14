@@ -28,7 +28,8 @@ const page = () => {
         </div>
         {/* /hm2-intro-hotel-search-area */}
         {/* ====== about-area-start =============================================== */}
-        <div className="about-hm2-area hm2 mt-115  over-hidden position-relative">
+        <div className="about-hm2-area hm2 mt-60 md:mt-40 over-hidden position-relative">
+         
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-xl-6 col-lg-7  col-md-9  col-sm-12 col-12">
@@ -36,7 +37,8 @@ const page = () => {
                   <span className="sub-title f-500 text-uppercase primary-color position-relative d-inline-block pb-15 mb-2">
                     We are champ
                   </span>
-                  <h2 className="mb-0">Welcome to Rovero</h2>
+                  <h2 className="mb-0 text-3xl md:text-4xl">Welcome to Rovero</h2>
+               
                 </div>
                 {/* /title */}
               </div>
@@ -96,7 +98,8 @@ const page = () => {
         </div>
         {/* about-hm2-area-end  */}
         {/* ====== rooms-area-start =============================================== */}
-        <div className="rooms-hm2-area hm2 mt-120 mb-120">
+        <div className="rooms-hm2-area hm2 mt-60 md:mt-80 mb-60 md:mb-80">
+         
           <div className="container-fluid container-wrapper p-md-0">
             <div className="row rooms-hm2-wrapper no-gutters align-items-md-center img-hover-effect-wrapper">
               <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 px-xl-0">
@@ -111,11 +114,12 @@ const page = () => {
               </div>
               {/* /col */}
               <div className="col-xl-6 col-lg-6 col-md-6  col-sm-12 col-12">
-                <div className="room-hm2-content mt--10 hm2-room-content-margin">
+        <div className="room-hm2-content mt-4 md:mt-0 px-4 md:px-8">
+                
                   
                   {/* /ratting a */}
                   <div className="section-content-title">
-                    <h2 className="mb-22">Simple Single Delux</h2>
+                    <h2 className="mb-3 text-2xl md:text-3xl">Simple Single Delux</h2>
                     <p>
                       Bipor incididunt ut labore et dolore magna liqu Ut enim ad
                       teros ut bione bore et dolore magna aliqua. Ut enim ad
@@ -157,11 +161,12 @@ const page = () => {
             {/* /row */}
             <div className="row rooms-hm2-wrapper rooms-hm2-wrapper2 no-gutters align-items-md-center flex-column-reverse flex-md-row img-hover-effect-wrapper">
               <div className="col-xl-6 col-lg-6 col-md-6  col-sm-12 col-12">
-                <div className="room-hm2-content mt--10 hm2-room-content-margin">
+        <div className="room-hm2-content mt-4 md:mt-0 px-4 md:px-8">
+                
                 
                   {/* /ratting a */}
                   <div className="section-content-title">
-                    <h2 className="mb-22">Luxury Single Delux</h2>
+                    <h2 className="mb-3 text-2xl md:text-3xl">Luxury Single Delux</h2>
                     <p>
                       Bipor incididunt ut labore et dolore magna liqu Ut enim ad
                       teros ut bione bore et dolore magna aliqua. Ut enim ad
@@ -225,11 +230,12 @@ const page = () => {
               </div>
               {/* /col */}
               <div className="col-xl-6 col-lg-6 col-md-6  col-sm-12 col-12">
-                <div className="room-hm2-content mt--10 hm2-room-content-margin">
+        <div className="room-hm2-content mt-4 md:mt-0 px-4 md:px-8">
+                
                   
                   {/* /ratting a */}
                   <div className="section-content-title">
-                    <h2 className="mb-22">Luxury Super Double</h2>
+                    <h2 className="mb-3 text-2xl md:text-3xl">Luxury Super Double</h2>
                     <p>
                       Bipor incididunt ut labore et dolore magna liqu Ut enim ad
                       teros ut bione bore et dolore magna aliqua. Ut enim ad
@@ -521,10 +527,10 @@ const page = () => {
         </div>
         {/* offer-area -end */}
         {/* ====== testimonial-area-start =============================================== */}
-        <Testimonial />
+    
         {/* testimonial-area -end */}
         {/* ====== brand-area-start =============================================== */}
-        <Brand />
+        {/* <Brand /> */}
 
  
       </main>

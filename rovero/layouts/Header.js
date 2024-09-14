@@ -17,8 +17,8 @@ const DesktopMenu = () => {
         </li>
         {/* /About */}
         <li>
-          <a href="#">Rooms</a>
-          <ul className="mega-menu mega-dropdown-menu white-bg ml-0">
+          <a href="rooms2">Rooms</a>
+          {/* <ul className="mega-menu mega-dropdown-menu white-bg ml-0">
             <li>
               <Link href="rooms">Rooms 01</Link>
             </li>
@@ -28,7 +28,7 @@ const DesktopMenu = () => {
             <li>
               <Link href="rooms-details">Rooms details</Link>
             </li>
-          </ul>
+          </ul> */}
         </li>
         {/* /Home */}
         {/* <li>
@@ -80,30 +80,11 @@ const MobileMenu = () => {
   return (
     <nav className="mean-nav d-block d-xl-none">
       <ul className="d-block">
-        <li>
+        <li className="cursor-pointer">
           <Link href="/" aria-current="page">
             Home
           </Link>
-          <ul
-            className="mega-menu mega-dropdown-menu white-bg ml-0"
-            style={activeLi("home")}
-          >
-            <li>
-              <Link href="/" aria-current="page">
-                Home 01
-              </Link>
-            </li>
-            <li>
-              <Link href="index2">Home 02</Link>
-            </li>
-          </ul>
-          <a
-            className="mean-expand"
-            href="#"
-            onClick={() => activeMenuSet("home")}
-          >
-            +
-          </a>
+         
         </li>
         {/* /Home */}
         <li>
@@ -111,79 +92,14 @@ const MobileMenu = () => {
         </li>
         {/* /About */}
         <li>
-          <a href="#">Rooms</a>
-          <ul
-            className="mega-menu mega-dropdown-menu white-bg ml-0"
-            style={activeLi("Rooms")}
-          >
-            <li>
-              <Link href="rooms">Rooms 01</Link>
-            </li>
-            <li>
-              <Link href="rooms2">Rooms 02</Link>
-            </li>
-            <li>
-              <Link href="rooms-details">Rooms details</Link>
-            </li>
-          </ul>
-          <a
-            className="mean-expand"
-            href="#"
-            onClick={() => activeMenuSet("Rooms")}
-          >
-            +
-          </a>
+          <a href="rooms2">Rooms</a>
+         
+          
         </li>
         {/* /Home */}
-        <li>
-          <a href="#">Reservation</a>
-          <ul
-            className="mega-menu mega-dropdown-menu white-bg ml-0"
-            style={activeLi("Reservation")}
-          >
-            <li>
-              <Link href="booking">Booking</Link>
-            </li>
-            <li>
-              <Link href="checkout">Checkout</Link>
-            </li>
-            <li>
-              <Link href="confirmation">Confirmation</Link>
-            </li>
-          </ul>
-          <a
-            className="mean-expand"
-            href="#"
-            onClick={() => activeMenuSet("Reservation")}
-          >
-            +
-          </a>
-        </li>
+      
         {/* /Pages */}
-        <li>
-          <a href="#">News</a>
-          <ul
-            className="mega-menu mega-dropdown-menu white-bg ml-0"
-            style={activeLi("News")}
-          >
-            <li>
-              <Link href="blog">News</Link>
-            </li>
-            <li>
-              <Link href="blog-details">News details</Link>
-            </li>
-            <li>
-              <Link href="blog-details2">News details 2</Link>
-            </li>
-          </ul>
-          <a
-            className="mean-expand"
-            href="#"
-            onClick={() => activeMenuSet("News")}
-          >
-            +
-          </a>
-        </li>
+       
         {/* /News */}
         <li className="mean-last">
           <Link href="contact">Contact</Link>

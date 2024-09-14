@@ -25,29 +25,7 @@ const page = () => {
             {/* /col */}
             <div className="col-xl-6 col-lg-6 col-md-6  col-sm-12 col-12">
               <div className="room-hm2-content mt--10 hm2-room-content-margin">
-                <div className="ratting-area d-flex align-items-center mb-xl-2">
-                  <ul className="review-ratting">
-                    <li>
-                      <span>
-                        <i className="fa fa-star" />
-                      </span>
-                      <span>
-                        <i className="fa fa-star" />
-                      </span>
-                      <span>
-                        <i className="fa fa-star" />
-                      </span>
-                      <span>
-                        <i className="fa fa-star" />
-                      </span>
-                      <span>
-                        <i className="fa fa-star" />
-                      </span>
-                    </li>
-                  </ul>
-                  {/* /ratting */}
-                  <p className="mb-0 ml-15">12 Reviews</p>
-                </div>
+           
                 {/* /ratting a */}
                 <div className="section-content-title">
                   <h2 className="mb-22">
@@ -61,51 +39,14 @@ const page = () => {
                 </div>
                 {/* /title */}
                 <div className="room-info-details mt-25">
-                  <div className="room-price">
+                  <div className="room-price mb-3">
                     <p className="mr-20 d-inline-block mb-0">Starts From</p>
                     <span className="room-price f-700 main-color fontNoto text-uppercase ">
                       <span className="theme-color mr-2">$299</span>/ Night
                     </span>
                   </div>
                   {/* /room-price-details */}
-                  <div className="room-info d-flex mt-22 mb-40">
-                    <ul className="room-info-left pr-45">
-                      <li>
-                        <span className="fontNoto main-color f-700 text-uppercase">
-                          Status
-                        </span>
-                      </li>
-                      <li>
-                        <span className="fontNoto main-color f-700 text-uppercase">
-                          Payment
-                        </span>
-                      </li>
-                      <li>
-                        <span className="fontNoto main-color f-700 text-uppercase">
-                          Guest
-                        </span>
-                      </li>
-                      <li>
-                        <span className="fontNoto main-color f-700 text-uppercase">
-                          Beds
-                        </span>
-                      </li>
-                    </ul>
-                    <ul className="room-info-right">
-                      <li>
-                        <span>Available</span>
-                      </li>
-                      <li>
-                        <span>30% Advanced</span>
-                      </li>
-                      <li>
-                        <span>3</span>
-                      </li>
-                      <li>
-                        <span>2</span>
-                      </li>
-                    </ul>
-                  </div>
+               
                   <div className="my-btn d-inline-block pr-40">
                     <Link href="rooms-details" className="btn theme-bg w-100">
                       book now
@@ -132,29 +73,7 @@ const page = () => {
           <div className="row rooms-hm2-wrapper rooms-hm2-wrapper2 no-gutters align-items-md-center flex-column-reverse flex-md-row img-hover-effect-wrapper">
             <div className="col-xl-6 col-lg-6 col-md-6  col-sm-12 col-12">
               <div className="room-hm2-content mt--10 hm2-room-content-margin">
-                <div className="ratting-area d-flex align-items-center mb-xl-2">
-                  <ul className="review-ratting">
-                    <li>
-                      <span>
-                        <i className="fa fa-star" />
-                      </span>
-                      <span>
-                        <i className="fa fa-star" />
-                      </span>
-                      <span>
-                        <i className="fa fa-star" />
-                      </span>
-                      <span>
-                        <i className="fa fa-star" />
-                      </span>
-                      <span>
-                        <i className="fa fa-star" />
-                      </span>
-                    </li>
-                  </ul>
-                  {/* /ratting */}
-                  <p className="mb-0 ml-15">12 Reviews</p>
-                </div>
+               
                 {/* /ratting a */}
                 <div className="section-content-title">
                   <h2 className="mb-22">
@@ -175,45 +94,8 @@ const page = () => {
                     </span>
                   </div>
                   {/* /room-price-details */}
-                  <div className="room-info d-flex mt-22 mb-40">
-                    <ul className="room-info-left pr-45">
-                      <li>
-                        <span className="fontNoto main-color f-700 text-uppercase">
-                          Status
-                        </span>
-                      </li>
-                      <li>
-                        <span className="fontNoto main-color f-700 text-uppercase">
-                          Payment
-                        </span>
-                      </li>
-                      <li>
-                        <span className="fontNoto main-color f-700 text-uppercase">
-                          Guest
-                        </span>
-                      </li>
-                      <li>
-                        <span className="fontNoto main-color f-700 text-uppercase">
-                          Beds
-                        </span>
-                      </li>
-                    </ul>
-                    <ul className="room-info-right">
-                      <li>
-                        <span>Available</span>
-                      </li>
-                      <li>
-                        <span>30% Advanced</span>
-                      </li>
-                      <li>
-                        <span>3</span>
-                      </li>
-                      <li>
-                        <span>2</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="my-btn d-inline-block pr-40">
+                 
+                  <div className="my-btn d-inline-block pr-40 mt-3">
                     <Link href="rooms-details" className="btn theme-bg w-100">
                       book now
                     </Link>
@@ -261,29 +143,7 @@ const page = () => {
             {/* /col */}
             <div className="col-xl-6 col-lg-6 col-md-6  col-sm-12 col-12">
               <div className="room-hm2-content mt--10 hm2-room-content-margin">
-                <div className="ratting-area d-flex align-items-center mb-xl-2">
-                  <ul className="review-ratting">
-                    <li>
-                      <span>
-                        <i className="fa fa-star" />
-                      </span>
-                      <span>
-                        <i className="fa fa-star" />
-                      </span>
-                      <span>
-                        <i className="fa fa-star" />
-                      </span>
-                      <span>
-                        <i className="fa fa-star" />
-                      </span>
-                      <span>
-                        <i className="fa fa-star" />
-                      </span>
-                    </li>
-                  </ul>
-                  {/* /ratting */}
-                  <p className="mb-0 ml-15">12 Reviews</p>
-                </div>
+                
                 {/* /ratting a */}
                 <div className="section-content-title">
                   <h2 className="mb-22">
@@ -304,45 +164,8 @@ const page = () => {
                     </span>
                   </div>
                   {/* /room-price-details */}
-                  <div className="room-info d-flex mt-22 mb-40">
-                    <ul className="room-info-left pr-45">
-                      <li>
-                        <span className="fontNoto main-color f-700 text-uppercase">
-                          Status
-                        </span>
-                      </li>
-                      <li>
-                        <span className="fontNoto main-color f-700 text-uppercase">
-                          Payment
-                        </span>
-                      </li>
-                      <li>
-                        <span className="fontNoto main-color f-700 text-uppercase">
-                          Guest
-                        </span>
-                      </li>
-                      <li>
-                        <span className="fontNoto main-color f-700 text-uppercase">
-                          Beds
-                        </span>
-                      </li>
-                    </ul>
-                    <ul className="room-info-right">
-                      <li>
-                        <span>Available</span>
-                      </li>
-                      <li>
-                        <span>30% Advanced</span>
-                      </li>
-                      <li>
-                        <span>3</span>
-                      </li>
-                      <li>
-                        <span>2</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="my-btn d-inline-block pr-40">
+                  
+                  <div className="my-btn d-inline-block pr-40 mt-3">
                     <Link href="rooms-details" className="btn theme-bg w-100">
                       book now
                     </Link>
@@ -368,29 +191,7 @@ const page = () => {
           <div className="row rooms-hm2-wrapper rooms-hm2-wrapper2 no-gutters align-items-md-center flex-column-reverse flex-md-row img-hover-effect-wrapper">
             <div className="col-xl-6 col-lg-6 col-md-6  col-sm-12 col-12">
               <div className="room-hm2-content mt--10 hm2-room-content-margin">
-                <div className="ratting-area d-flex align-items-center mb-xl-2">
-                  <ul className="review-ratting">
-                    <li>
-                      <span>
-                        <i className="fa fa-star" />
-                      </span>
-                      <span>
-                        <i className="fa fa-star" />
-                      </span>
-                      <span>
-                        <i className="fa fa-star" />
-                      </span>
-                      <span>
-                        <i className="fa fa-star" />
-                      </span>
-                      <span>
-                        <i className="fa fa-star" />
-                      </span>
-                    </li>
-                  </ul>
-                  {/* /ratting */}
-                  <p className="mb-0 ml-15">12 Reviews</p>
-                </div>
+               
                 {/* /ratting a */}
                 <div className="section-content-title">
                   <h2 className="mb-22">
@@ -411,45 +212,8 @@ const page = () => {
                     </span>
                   </div>
                   {/* /room-price-details */}
-                  <div className="room-info d-flex mt-22 mb-40">
-                    <ul className="room-info-left pr-45">
-                      <li>
-                        <span className="fontNoto main-color f-700 text-uppercase">
-                          Status
-                        </span>
-                      </li>
-                      <li>
-                        <span className="fontNoto main-color f-700 text-uppercase">
-                          Payment
-                        </span>
-                      </li>
-                      <li>
-                        <span className="fontNoto main-color f-700 text-uppercase">
-                          Guest
-                        </span>
-                      </li>
-                      <li>
-                        <span className="fontNoto main-color f-700 text-uppercase">
-                          Beds
-                        </span>
-                      </li>
-                    </ul>
-                    <ul className="room-info-right">
-                      <li>
-                        <span>Available</span>
-                      </li>
-                      <li>
-                        <span>30% Advanced</span>
-                      </li>
-                      <li>
-                        <span>3</span>
-                      </li>
-                      <li>
-                        <span>2</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="my-btn d-inline-block pr-40">
+                 
+                  <div className="my-btn d-inline-block pr-40 mt-3">
                     <Link href="rooms-details" className="btn theme-bg w-100">
                       book now
                     </Link>
@@ -483,14 +247,14 @@ const page = () => {
             {/* /col */}
           </div>
           {/* /row */}
-          <div className="hm2-rooms-btn transparent-btn text-center mt-60">
+          {/* <div className="hm2-rooms-btn transparent-btn text-center mt-60">
             <div className="my-btn d-inline-block pr-40">
               <Link href="rooms-details" className="btn bg-transparent w-100">
                 view all
               </Link>
             </div>
             {/* / btn */}
-          </div>
+          
           {/* /rooms-btn */}
         </div>
         {/* /container */}
