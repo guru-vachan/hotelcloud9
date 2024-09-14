@@ -9,14 +9,7 @@ const DesktopMenu = () => {
       <ul className="d-block">
         <li>
           <Link href="/">Home</Link>
-          <ul className="mega-menu mega-dropdown-menu white-bg ml-0">
-            <li>
-              <Link href="/">Home 01</Link>
-            </li>
-            <li>
-              <Link href="index2">Home 02</Link>
-            </li>
-          </ul>
+        
         </li>
         {/* /Home */}
         <li>
@@ -38,7 +31,7 @@ const DesktopMenu = () => {
           </ul>
         </li>
         {/* /Home */}
-        <li>
+        {/* <li>
           <a href="#">Reservation</a>
           <ul className="mega-menu mega-dropdown-menu white-bg ml-0">
             <li>
@@ -51,9 +44,9 @@ const DesktopMenu = () => {
               <Link href="confirmation">Confirmation</Link>
             </li>
           </ul>
-        </li>
+        </li> */}
         {/* /Pages */}
-        <li>
+        {/* <li>
           <a href="#">News</a>
           <ul className="mega-menu mega-dropdown-menu white-bg ml-0">
             <li>
@@ -66,7 +59,7 @@ const DesktopMenu = () => {
               <Link href="blog-details2">News details 2</Link>
             </li>
           </ul>
-        </li>
+        </li> */}
         {/* /News */}
         <li>
           <Link href="contact">Contact</Link>
