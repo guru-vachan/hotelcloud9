@@ -1,6 +1,14 @@
 module.exports = {   
     "title": "Enjoy Your Next Vacation at Cloud9",
     "description": "Experience luxury and comfort like never before—your perfect stay awaits.",
+    "tile" : [
+        {
+            "heading": "Welcome to Cloud9",
+            "title": "Enjoy Your Next Vacation at Cloud9",
+            "description": "Experience luxury and comfort like never before—your perfect stay awaits.",
+            "image": "/images/pages/about.jpg"
+        },
+    ],
     "pages": {
         "about": {
             "title": "About us",

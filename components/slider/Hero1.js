@@ -8,159 +8,57 @@ const Hero1 = () => {
   return (
     <div className="slider-area hm1 position-relative over-hidden">
       <Slider {...sliderProps.home1} className="slider-active">
-        <div className="single-slider single-slider1 slider-height1 d-flex align-items-end z-index1 img-hover-effect-wrapper">
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-xl-6 col-lg-6  col-md-7  col-sm-12 col-12">
-                <div className="slider-content slider-content1 mt--10 mr-xl-2 position-relative">
-                  <span className="theme-color text-uppercase fontNoto f-700">
-                    Its Amazing
-                  </span>
-                  <h1
-                    className="mb-30 mt-1 f-700"
-                    data-aos="fade-right"
-                    data-aos-duration={2000}
-                    data-aos-delay={150}
-                  >
-                    Enjoy A Dream Vacation in The Hotel Cloud9
-                  </h1>
-                  <p
-                    className="mb-45"
-                    data-aos="fade-right"
-                    data-aos-duration={1700}
-                  >
-                    Bipor incididunt ut labore et dolore magna liqu Ut enim ad
-                    minim veniam quis nostrud
-                  </p>
-                  <div className="my-btn d-inline-block">
-                    <Link href="rooms-details" className="btn theme-bg">
-                      book now
-                    </Link>
+        {config.tile.map((slide, index) => (
+          <div key={index} className="single-slider single-slider1 slider-height1 d-flex align-items-end z-index1 img-hover-effect-wrapper">
+            <div className="container">
+              <div className="row align-items-center">
+                <div className="col-xl-6 col-lg-6  col-md-7  col-sm-12 col-12">
+                  <div className="slider-content slider-content1 mt--10 mr-xl-2 position-relative">
+                    <span className="theme-color text-uppercase fontNoto f-700">
+                      {slide.heading}
+                    </span>
+                    <h1
+                      className="mb-30 mt-1 f-700"
+                      data-aos="fade-right"
+                      data-aos-duration={2000}
+                      data-aos-delay={150}
+                    >
+                      {slide.title}
+                    </h1>
+                    <p
+                      className="mb-45"
+                      data-aos="fade-right"
+                      data-aos-duration={1700}
+                    >
+                      {slide.description}
+                    </p>
+                    <div className="my-btn d-inline-block">
+                      <Link href="rooms-details" className="btn theme-bg">
+                        book now
+                      </Link>
+                    </div>
+                    {/* / btn */}
                   </div>
-                  {/* / btn */}
+                  {/* /slider-content */}
                 </div>
-                {/* /slider-content */}
-              </div>
-              {/* /col */}
-              <div className="col-xl-5 col-lg-5 offset-lg-1  col-md-5  col-sm-12 col-12">
-                <div className="slider-img hm1-slider-img img-hover-effect2 over-hidden position-relative">
-                  <img
-                    className="heartbeat"
-                    src="images/cloud9/room1.webp"
-                    alt="hero image"
-                  />
-                </div>
-                {/* /slider-img */}
-              </div>
-              {/* /col */}
-            </div>
-            {/* /row */}
-          </div>
-          {/* /container */}
-        </div>
-        {/* /slider-height */}
-        <div className="single-slider single-slider1 slider-height1 d-flex align-items-end z-index1 img-hover-effect-wrapper">
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-xl-6 col-lg-6  col-md-7  col-sm-12 col-12">
-                <div className="slider-content slider-content1 mt--10 mr-xl-2 position-relative">
-                  <span className="theme-color text-uppercase fontNoto f-700">
-                    Its Amazing
-                  </span>
-                  <h1
-                    className="mb-30 mt-1 f-700"
-                    data-aos="fade-right"
-                    data-aos-duration={2000}
-                    data-aos-delay={150}
-                  >
-                    Enjoy A Dream Vacation in The Hotel Cloud9
-                  </h1>
-                  <p
-                    className="mb-45"
-                    data-aos="fade-right"
-                    data-aos-duration={1700}
-                  >
-                    Bipor incididunt ut labore et dolore magna liqu Ut enim ad
-                    minim veniam quis nostrud
-                  </p>
-                  <div className="my-btn d-inline-block">
-                    <Link href="rooms-details" className="btn theme-bg">
-                      book now
-                    </Link>
+                {/* /col */}
+                <div className="col-xl-5 col-lg-5 offset-lg-1  col-md-5  col-sm-12 col-12">
+                  <div className="slider-img hm1-slider-img img-hover-effect2 over-hidden position-relative">
+                    <img
+                      className="heartbeat"
+                      src={slide.image}
+                      alt="hero image"
+                    />
                   </div>
-                  {/* / btn */}
+                  {/* /slider-img */}
                 </div>
-                {/* /slider-content */}
+                {/* /col */}
               </div>
-              {/* /col */}
-              <div className="col-xl-5 col-lg-5 offset-lg-1  col-md-5  col-sm-12 col-12">
-                <div className="slider-img hm1-slider-img img-hover-effect2 over-hidden position-relative">
-                  <img
-                    className="heartbeat"
-                    src="images/cloud9/room2.webp"
-                    alt="hero image"
-                  />
-                </div>
-                {/* /slider-img */}
-              </div>
-              {/* /col */}
+              {/* /row */}
             </div>
-            {/* /row */}
+            {/* /container */}
           </div>
-          {/* /container */}
-        </div>
-        {/* /slider-height */}
-        <div className="single-slider single-slider1 slider-height1 d-flex align-items-end z-index1 img-hover-effect-wrapper">
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-xl-6 col-lg-6  col-md-7  col-sm-12 col-12">
-                <div className="slider-content slider-content1 mt--10 mr-xl-2 position-relative">
-                  <span className="theme-color text-uppercase fontNoto f-700">
-                    Its Amazing
-                  </span>
-                  <h1
-                    className="mb-30 mt-1 f-700"
-                    data-aos="fade-right"
-                    data-aos-duration={2000}
-                    data-aos-delay={150}
-                  >
-                    Enjoy A Dream Vacation in The Hotel Cloud9
-                  </h1>
-                  <p
-                    className="mb-45"
-                    data-aos="fade-right"
-                    data-aos-duration={1700}
-                  >
-                    Bipor incididunt ut labore et dolore magna liqu Ut enim ad
-                    minim veniam quis nostrud
-                  </p>
-                  <div className="my-btn d-inline-block">
-                    <Link href="rooms-details" className="btn theme-bg">
-                      book now
-                    </Link>
-                  </div>
-                  {/* / btn */}
-                </div>
-                {/* /slider-content */}
-              </div>
-              {/* /col */}
-              <div className="col-xl-5 col-lg-5 offset-lg-1  col-md-5  col-sm-12 col-12">
-                <div className="slider-img hm1-slider-img img-hover-effect2 over-hidden position-relative">
-                  <img
-                    className="heartbeat"
-                     src="images/cloud9/room1.webp"
-                    alt="hero image"
-                  />
-                </div>
-                {/* /slider-img */}
-              </div>
-              {/* /col */}
-            </div>
-            {/* /row */}
-          </div>
-          {/* /container */}
-        </div>
-        {/* /slider-height */}
+        ))}
       </Slider>
       {/* /slider-active */}
       <div className="hero-dotted position-absolute bottom-0 z-index-1 d-none d-md-block">
@@ -169,6 +67,7 @@ const Hero1 = () => {
     </div>
   );
 };
+
 export default Hero1;
 
 export const Hero2 = () => {

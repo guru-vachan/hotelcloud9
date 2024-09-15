@@ -24,7 +24,7 @@ const page = () => {
                 <span className="text-uppercase theme-color f-700 fontNoto pb- d-block mb-6">
                   We are awesome
                 </span>
-                <h2 className="mb-0">Welcome to The World of Rovero!</h2>
+                <h2 className="mb-0">Welcome to The World of Cloud9!</h2>
               </div>
               {/* /section-title */}
             </div>
@@ -35,9 +35,7 @@ const page = () => {
             <div className="col-xl-5  col-lg-6 col-md-5  col-sm-12 col-12">
               <div className="about-page-left position-relative">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  o eiusmod tempor{" "}
+                This contemporary hotel in the city centre is 3 km from the alwar railway station, 3 km from the architecturally significant moosi maharani ki chhatri palace and 10 km from the 16 th century alwar fort.{" "}
                 </p>
               </div>
               {/* /about-page-left */}
@@ -46,18 +44,15 @@ const page = () => {
             <div className="col-xl-6 offset-xl-1  col-lg-6 col-md-7  col-sm-12 col-12">
               <div className="about-page-right">
                 <p className="mb-30">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eius mod tempor incididunt ut labore et dolore magna
-                  aliqua. o eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua.{" "}
+                Beautiful room have free Wi Fi,flat screen TV and tea and coffee makers,as well as mini fridge and intercom upgrade add sitting area and open Terris lawn; suite provide living room.{" "}
                 </p>
-                <p className="mb-0">
+                {/* <p className="mb-0">
                   Ut enim ad minim veniam, quis nos trud exercitation ullamco
                   laboris nisi ut alied do eiusmod tempor incididunt ut labore
                   et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                   exercitation ullamco laboris nisi ut aliquip ex ea commodo
                   consequat.{" "}
-                </p>
+                </p> */}
               </div>
               {/* /about-page right */}
             </div>
