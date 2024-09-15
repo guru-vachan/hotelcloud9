@@ -49,11 +49,11 @@ const MobileMenu = () => {
         </li>
         {/* /Home */}
         <li>
-          <Link href="about">About</Link>
+          <Link href="/about">About</Link>
         </li>
         {/* /About */}
         <li>
-          <a href="rooms">Rooms</a>
+          <a href="/rooms">Rooms</a>
          
           
         </li>
@@ -63,7 +63,7 @@ const MobileMenu = () => {
        
         {/* /News */}
         <li className="mean-last">
-          <Link href="contact">Contact</Link>
+          <Link href="/contact">Contact</Link>
         </li>
         {/* /Contact */}
       </ul>
