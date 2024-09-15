@@ -1,4 +1,5 @@
 "use client";
+import config from "@/utility/config";
 import { sliderProps } from "@/utility/sliderProps";
 import Link from "next/link";
 import Slider from "react-slick";
@@ -191,17 +192,17 @@ export const Hero2 = () => {
                     data-aos-duration={2000}
                     data-aos-delay={150}
                   >
-                    Enjoy Your Next Vacation at Cloud9
+                    {config.title}
                   </h1>
                   <p
                     className="text-white mb-55"
                     data-aos="fade-up"
                     data-aos-duration={1700}
                   >
-                   Experience luxury and comfort like never before—your perfect stay awaits.
+                    {config.title}  
                   </p>
                   <div className="my-btn d-inline-block">
-                    <Link href="rooms-details" className="btn theme-bg">
+                    <Link href="/rooms" className="btn theme-bg">
                       book now
                     </Link>
                   </div>

@@ -10,6 +10,7 @@ const page = () => {
       <Breadcrumb
         pageName="About"
         pageTitle="About us"
+        pageSubTitle="Enjoy Your Next Vacation at Cloud9"
         pageSubTitle="Bipor incididunt ut labore et dolore magna liqu"
       />
       {/* ====== about-page-area-start =============================================== */}

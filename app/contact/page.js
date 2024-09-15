@@ -7,6 +7,7 @@ const page = () => {
         pageName="Contact"
         bgImage="images/bg/contact-page-bg.jpg"
         pageTitle="Contact Us"
+        pageSubTitle="Enjoy Your Next Vacation at Cloud9"
       />
       <div className="contact-area contact-page mt-120">
         <div className="container">
@@ -22,8 +23,8 @@ const page = () => {
                 <div className="contact-text">
                   <h4 className="mb-15">Address</h4>
                   <p className="mb-0">
-                    20 Bordeshi, Amin Bazar
-                    <br /> Savar, Dhaka
+                  Jail circle, Opp. C.P Mall
+                    <br /> Alwar(Raj.) - 301001
                   </p>
                 </div>
               </div>
@@ -42,10 +43,10 @@ const page = () => {
                   <h4 className="mb-3">Phone Number</h4>
                   <p className="mb-0">
                     <a className="d-block" href="tell:+1234567890">
-                      +123 456 7890
+                    +91 7232054750 (Sales)
                     </a>
                     <a className="d-block" href="tell:+1234567891">
-                      +01234 567 891
+                    +91 7232054750 (Enquiry)
                     </a>
                   </p>
                 </div>
@@ -65,11 +66,9 @@ const page = () => {
                   <h4 className="mb-3">Email Address</h4>
                   <p className="mb-0">
                     <a className="d-block" href="#">
-                      hello@hotelian.com
+                    admin@hotelcloud9.in
                     </a>
-                    <a className="d-block" href="#">
-                      sales@hotelian.com
-                    </a>
+             
                   </p>
                 </div>
               </div>
@@ -192,9 +191,18 @@ const page = () => {
             <div
               className="map-wrapper w-100 z-index1 rounded-0"
               id="mapwrapper"
-            />
+            >
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3536.4095461102866!2d76.61214317641567!3d27.580829731058444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3972993327f7a909%3A0x1c754df47f880a88!2sHotel%20Cloud%209%20Alwar!5e0!3m2!1sen!2sin!4v1726406913721!5m2!1sen!2sin" 
+                width="100%" 
+                height="450" 
+                style={{ border: 0 }} 
+                allowFullScreen="" 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
           </div>
-          {/* /container */}
         </div>
         {/* /map */}
       </div>
