@@ -9,6 +9,29 @@ module.exports = {
             "image": "/images/pages/about.jpg"
         },
     ],
+    "offer": [
+        {
+          "title": "Holiday Special Offer",
+          "description": "Toma onsectetur adipisicing elit, sed do eiusmod tiusmod temp",
+          "image": "images/offer/hm2-offer-img1.jpg",
+          "price": 299,
+          "duration": "2 Days & 3 Nights"
+        },
+        {
+          "title": "Honeymoon Offer",
+          "description": "Toma onsectetur adipisicing elit, sed do eiusmod tiusmod temp",
+          "image": "images/offer/hm2-offer-img2.jpg",
+          "price": 299,
+          "duration": "2 Days & 3 Nights"
+        },
+        {
+          "title": "Holiday Special Offer",
+          "description": "Toma onsectetur adipisicing elit, sed do eiusmod tiusmod temp",
+          "image": "images/offer/hm2-offer-img3.jpg",
+          "price": 299,
+          "duration": "2 Days & 3 Nights"
+        }
+    ],
     "pages": {
         "about": {
             "title": "About us",

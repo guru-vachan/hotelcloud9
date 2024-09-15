@@ -6,6 +6,8 @@ import Subscribe from "@/components/Subscribe";
 import Testimonial from "@/components/Testimonial";
 import RoveroLayout from "@/layouts/RoveroLayout";
 import Link from "next/link";
+import offerData from '@/data/offers.json'; // Add this import
+
 const page = () => {
   
   return (
@@ -125,205 +127,60 @@ const page = () => {
             </div>
             {/* /row */}
             <div className="row offer-wrapper align-items-center justify-content-center mt-85">
-              <div
-                className="col-xl-4 col-lg-4 col-md-6 col-sm-9 col-12 aos-init aos-animate"
-                data-aos="fade-up"
-                data-aos-duration={1000}
-              >
+              {offerData.map((offer, index) => (
                 <div
-                  className="single-offer-wrapper position-relative transition5 zoom-img-hover over-hidden transition3 d-flex align-items-center mb-30"
-                  data-overlay={2}
+                  key={index}
+                  className="col-xl-4 col-lg-4 col-md-6 col-sm-9 col-12 aos-init aos-animate"
+                  data-aos="fade-up"
+                  data-aos-duration={1000}
                 >
-                  <div className="offer-hm2-img w-100 position-relative transition5">
-                    <img
-                      className="img w-100"
-                      src="images/offer/hm2-offer-img1.jpg"
-                      alt="news-images01"
-                    />
-                  </div>
-                  {/* /blog-img */}
-                  <div className="offer-hm2-content position-absolute text-center transition5 z-index1 w-100 h-100">
-                    <div className="offer-hm2-text1 transition5 position-absolute w-100 top-0 transition5 pl-30 pr-30 pt-40">
-                      <div className="offer-hm2-text-hover1 transition5">
-                        <h5 className="text-white mb-6">
-                          <Link href="room-details ">
-                            Holiday Special Offer
+                  <div
+                    className="single-offer-wrapper position-relative transition5 zoom-img-hover over-hidden transition3 d-flex align-items-center mb-30"
+                    data-overlay={2}
+                  >
+                    <div className="offer-hm2-img w-100 position-relative transition5">
+                      <img
+                        className="img w-100"
+                        src={offer.image}
+                        alt={offer.title}
+                      />
+                    </div>
+                    <div className="offer-hm2-content position-absolute text-center transition5 z-index1 w-100 h-100">
+                      <div className="offer-hm2-text1 transition5 position-absolute w-100 top-0 transition5 pl-30 pr-30 pt-40">
+                        <div className="offer-hm2-text-hover1 transition5">
+                          <h5 className="text-white mb-6">
+                            <Link href="room-details">{offer.title}</Link>
+                          </h5>
+                          <p className="text-white">{offer.description}</p>
+                        </div>
+                      </div>
+                      <div className="offer-hm2-text2 position-absolute w-100 bottom-0 transition5 pt-45 pb-45">
+                        <div className="offer-hm2-text-hover transition5">
+                          <div className="room-price">
+                            <p className="text-white d-block mb-0">Starts From</p>
+                            <span className="text-white f-700 fontNoto d-block">
+                              ${offer.price}
+                            </span>
+                            <span className="room-price text-white d-block mt-2">
+                              {offer.duration}
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="offer-hm2-text3 position-absolute w-100 bottom-0 transition5 pl-25 pr-25 pb-50">
+                        <div className="my-btn2 d-inline-block offer-btn transition5">
+                          <Link
+                            href="rooms-details"
+                            className="btn position-relative rounded-0 transition5"
+                          >
+                            book now
                           </Link>
-                        </h5>
-                        <p className="text-white">
-                          Toma onsectetur adipisicing elit, sed do eiusmod
-                          tiusmod temp
-                        </p>
-                      </div>
-                      {/* /text-hover */}
-                    </div>
-                    {/* /offer text */}
-                    <div className="offer-hm2-text2 position-absolute w-100 bottom-0 transition5 pt-45 pb-45">
-                      <div className="offer-hm2-text-hover transition5">
-                        <div className="room-price">
-                          <p className="text-white d-block mb-0">Starts From</p>
-                          <span className="text-white f-700 fontNoto d-block">
-                            $299
-                          </span>
-                          <span className="room-price text-white d-block mt-2">
-                            2 Days &amp; 3 Nights
-                          </span>
                         </div>
-                        {/* /room-price-details */}
                       </div>
-                      {/* /text-hover */}
                     </div>
-                    {/* /offer text */}
-                    <div className="offer-hm2-text3 position-absolute w-100 bottom-0 transition5 pl-25 pr-25 pb-50">
-                      <div className="my-btn2 d-inline-block offer-btn transition5">
-                        <Link
-                          href="rooms-details"
-                          className="btn  position-relative rounded-0 transition5"
-                        >
-                          book now
-                        </Link>
-                      </div>
-                      {/* / btn */}
-                    </div>
-                    {/* /offer text */}
                   </div>
-                  {/* /offer content */}
                 </div>
-                {/* /single-offer */}
-              </div>
-              {/* /col */}
-              <div
-                className="col-xl-4 col-lg-4 col-md-6 col-sm-9 col-12 aos-init aos-animate"
-                data-aos="fade-up"
-                data-aos-duration={1000}
-              >
-                <div
-                  className="single-offer-wrapper position-relative transition5 zoom-img-hover over-hidden transition3 d-flex align-items-center mb-30"
-                  data-overlay={2}
-                >
-                  <div className="offer-hm2-img w-100 position-relative transition5">
-                    <img
-                      className="img w-100"
-                      src="images/offer/hm2-offer-img2.jpg"
-                      alt="news-images02"
-                    />
-                  </div>
-                  {/* /blog-img */}
-                  <div className="offer-hm2-content position-absolute text-center transition5 z-index1 w-100 h-100">
-                    <div className="offer-hm2-text1 position-absolute w-100 top-0 transition5 pl-30 pr-30 pt-40">
-                      <div className="offer-hm2-text-hover1 transition5">
-                        <h5 className="text-white mb-6">
-                          <Link href="room-details ">Honeymoon Offer</Link>
-                        </h5>
-                        <p className="text-white">
-                          Toma onsectetur adipisicing elit, sed do eiusmod
-                          tiusmod temp
-                        </p>
-                      </div>
-                      {/* /text-hover */}
-                    </div>
-                    {/* /offer text */}
-                    <div className="offer-hm2-text2 position-absolute w-100 bottom-0 transition5 pt-45 pb-45">
-                      <div className="offer-hm2-text-hover transition5">
-                        <div className="room-price">
-                          <p className="text-white d-block mb-0">Starts From</p>
-                          <span className="text-white f-700 fontNoto d-block">
-                            $299
-                          </span>
-                          <span className="room-price text-white d-block mt-2">
-                            2 Days &amp; 3 Nights
-                          </span>
-                        </div>
-                        {/* /room-price-details */}
-                      </div>
-                      {/* /text-hover */}
-                    </div>
-                    {/* /offer text */}
-                    <div className="offer-hm2-text3 position-absolute w-100 bottom-0 transition5 pl-25 pr-25 pb-50">
-                      <div className="my-btn2 d-inline-block offer-btn transition5">
-                        <Link
-                          href="rooms-details"
-                          className="btn  position-relative rounded-0 transition5"
-                        >
-                          book now
-                        </Link>
-                      </div>
-                      {/* / btn */}
-                    </div>
-                    {/* /offer text */}
-                  </div>
-                  {/* /offer content */}
-                </div>
-                {/* /single-offer */}
-              </div>
-              {/* /col */}
-              <div
-                className="col-xl-4 col-lg-4 col-md-6 col-sm-9 col-12 aos-init aos-animate"
-                data-aos="fade-up"
-                data-aos-duration={1000}
-              >
-                <div
-                  className="single-offer-wrapper position-relative transition5 zoom-img-hover over-hidden transition5 d-flex align-items-center mb-30"
-                  data-overlay={2}
-                >
-                  <div className="offer-hm2-img w-100 position-relative transition5">
-                    <img
-                      className="img w-100"
-                      src="images/offer/hm2-offer-img3.jpg"
-                      alt="news-images03"
-                    />
-                  </div>
-                  {/* /blog-img */}
-                  <div className="offer-hm2-content position-absolute text-center transition5 z-index1 w-100 h-100">
-                    <div className="offer-hm2-text1 position-absolute w-100 top-0 transition5 pl-30 pr-30 pt-40">
-                      <div className="offer-hm2-text-hover1 transition5">
-                        <h5 className="text-white mb-6">
-                          <Link href="room-details ">
-                            Holiday Special Offer
-                          </Link>
-                        </h5>
-                        <p className="text-white">
-                          Toma onsectetur adipisicing elit, sed do eiusmod
-                          tiusmod temp
-                        </p>
-                      </div>
-                      {/* /text-hover */}
-                    </div>
-                    {/* /offer text */}
-                    <div className="offer-hm2-text2 position-absolute w-100 bottom-0 transition5 pt-45 pb-45">
-                      <div className="offer-hm2-text-hover transition5">
-                        <div className="room-price">
-                          <p className="text-white d-block mb-0">Starts From</p>
-                          <span className="text-white f-700 fontNoto d-block">
-                            $299
-                          </span>
-                          <span className="room-price text-white d-block mt-2">
-                            2 Days &amp; 3 Nights
-                          </span>
-                        </div>
-                        {/* /room-price-details */}
-                      </div>
-                      {/* /text-hover */}
-                    </div>
-                    {/* /offer text */}
-                    <div className="offer-hm2-text3 position-absolute w-100 bottom-0 transition5 pl-25 pr-25 pb-50">
-                      <div className="my-btn2 d-inline-block offer-btn transition5">
-                        <Link
-                          href="rooms-details"
-                          className="btn  position-relative rounded-0 transition5"
-                        >
-                          book now
-                        </Link>
-                      </div>
-                      {/* / btn */}
-                    </div>
-                    {/* /offer text */}
-                  </div>
-                  {/* /offer content */}
-                </div>
-                {/* /single-offer */}
-              </div>
-              {/* /col */}
+              ))}
             </div>
             {/* /row */}
             <div className="promao-offer d-sm-flex justify-content-center align-items-center pt-32 text-center">
