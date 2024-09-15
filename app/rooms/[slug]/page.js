@@ -17,7 +17,7 @@ const RoomDetails = ({ params }) => {
         pageName={roomData.title}
         bgImage={roomData.bgImage}
         pageTitle={roomData.title}
-        pageSubTitle="Enjoy Your Next Vacation at Cloud9"
+        pageSubTitle={roomData.description}
       />
       {/* ====== rooms-details-page-area-start =============================================== */}
       <div className="rooms-details-page-area mt-120">

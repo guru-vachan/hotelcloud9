@@ -4,14 +4,16 @@ import Subscribe from "@/components/Subscribe";
 import Testimonial from "@/components/Testimonial";
 import RoveroLayout from "@/layouts/RoveroLayout";
 import Link from "next/link";
+import { pages } from "@/utility/config";
+
 const page = () => {
   return (
     <RoveroLayout>
       <Breadcrumb
         pageName="About"
-        pageTitle="About us"
-        pageSubTitle="Enjoy Your Next Vacation at Cloud9"
-        pageSubTitle="Bipor incididunt ut labore et dolore magna liqu"
+        pageTitle={pages.about.title}
+        pageSubTitle={pages.about.description}
+        bgImage={pages.about.image}
       />
       {/* ====== about-page-area-start =============================================== */}
       <div className="about-page-area mt-115">

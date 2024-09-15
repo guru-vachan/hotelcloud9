@@ -1,7 +1,23 @@
 module.exports = {   
     "title": "Enjoy Your Next Vacation at Cloud9",
     "description": "Experience luxury and comfort like never before—your perfect stay awaits.",
-
+    "pages": {
+        "about": {
+            "title": "About us",
+            "description": "Experience luxury and comfort like never before—your perfect stay awaits.",
+            "image": "/images/pages/about.jpg"
+        },
+        "rooms": {
+            "title": "Rooms",
+            "description": "Experience luxury and comfort like never before—your perfect stay awaits.",
+            "image": "/images/pages/rooms.jpg"
+        },
+        "contact": {
+            "title": "Contact us",
+            "description": "Experience luxury and comfort like never before—your perfect stay awaits.",
+            "image": "/images/pages/contact.jpg"
+        }, 
+    },
     "rooms": [
         {
           "id": 1,

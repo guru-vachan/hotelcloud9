@@ -1,13 +1,15 @@
 import Breadcrumb from "@/components/Breadcrumb";
 import RoveroLayout from "@/layouts/RoveroLayout";
+import { pages } from "@/utility/config";
+
 const page = () => {
   return (
     <RoveroLayout>
-      <Breadcrumb
-        pageName="Contact"
-        bgImage="images/bg/contact-page-bg.jpg"
-        pageTitle="Contact Us"
-        pageSubTitle="Enjoy Your Next Vacation at Cloud9"
+     <Breadcrumb
+        pageName="contact Us"
+        pageTitle={pages.contact.title}
+        pageSubTitle={pages.contact.description}
+        bgImage={pages.contact.image}
       />
       <div className="contact-area contact-page mt-120">
         <div className="container">
