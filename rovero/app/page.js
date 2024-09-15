@@ -1,11 +1,13 @@
 import Brand from "@/components/Brand";
 import News from "@/components/News";
+import Rooms from "@/components/Rooms";
 import { Hero2 } from "@/components/slider/Hero1";
 import Subscribe from "@/components/Subscribe";
 import Testimonial from "@/components/Testimonial";
 import RoveroLayout from "@/layouts/RoveroLayout";
 import Link from "next/link";
 const page = () => {
+  
   return (
     <RoveroLayout>
       <main className="over-hidden">
@@ -28,28 +30,30 @@ const page = () => {
         </div>
         {/* /hm2-intro-hotel-search-area */}
         {/* ====== about-area-start =============================================== */}
-        <div className="about-hm2-area hm2 mt-60 md:mt-40 over-hidden position-relative">
+        <div className="about-hm2-area hm2 mt-60 md:mt-40 over-hidden position-relative" style={{
+          marginTop: '100px',
+          marginBottom: '100px'
+        }}>
          
           <div className="container">
             <div className="row justify-content-center">
-              <div className="col-xl-6 col-lg-7  col-md-9  col-sm-12 col-12">
-                <div className="title text-center">
+              <div className="col-xl-6 col-lg-7 col-md-9 col-sm-12 col-12">
+                <div className="title text-center mb-8 md:mb-12"> {/* Added margin bottom */}
                   <span className="sub-title f-500 text-uppercase primary-color position-relative d-inline-block pb-15 mb-2">
                     We are champ
                   </span>
-                  <h2 className="mb-0 text-3xl md:text-4xl">Welcome to Rovero</h2>
-               
+                  <h2 className="mb-0 text-2xl md:text-3xl lg:text-4xl">Welcome to Cloud9</h2>
                 </div>
                 {/* /title */}
               </div>
               {/* /col */}
             </div>
             {/* /row */}
-            <div className="row about-hm2-wrapper d-flex justify-content-center align-items-center mt-85 img-hover-effect-wrapper">
-              <div className="col-xl-5  col-lg-6 col-md-5  col-sm-9 col-12">
+            <div className="row about-hm2-wrapper flex-column-reverse flex-lg-row justify-content-center align-items-center mt-8 md:mt-12 lg:mt-16 img-hover-effect-wrapper"> {/* Changed flex direction for mobile */}
+              <div className="col-xl-5 col-lg-6 col-md-8 col-sm-10 col-12 mb-8 lg:mb-0"> {/* Adjusted column sizes and added margin bottom for mobile */}
                 <div className="about-hm2-img position-relative over-hidden img-hover-effect2">
                   <img
-                    className="tilt"
+                    className="tilt w-full"
                     src="images/about/hm2-about-img.jpg"
                     alt="about image"
                   />
@@ -57,33 +61,31 @@ const page = () => {
                 {/* /about-img */}
               </div>
               {/* /col */}
-              <div className="col-xl-6 offset-xl-1  col-lg-6 col-md-7  col-sm-12 col-12 pl-lg-0 pl-xl-3">
+              <div className="col-xl-6 col-lg-6 col-md-10 col-sm-12 col-12 pl-lg-4 pl-xl-5" style={{
+          marginTop: '100px',
+          marginBottom: '100px'
+        }}> {/* Adjusted padding */}
                 <div className="about-hm2-content">
-                  <div className="section-content-title mt--10">
-                    <span className="text-uppercase theme-color f-700 fontNoto mb-2">
-                      The Hotellon
+                  <div className="section-content-title mt-4 lg:mt-0"> {/* Added margin top for mobile */}
+                    <span className="text-uppercase theme-color f-700 fontNoto mb-2 block">
+                      Experience
                     </span>
-                    <h2 className="mb-40">
-                      The Best Place to Live A Luxurious Life
-                    </h2>
-                    <p className="mb-25">
-                      Bipor incididunt ut labore et dolore magna liqu Ut enim ad
-                      teros ut labore et dolore magna aliqua. Ut enim ad conse
+        
+                    <p className="mb-4">
+                    This contemporary hotel in the city centre is 3 km from the alwar railway station, 3 km from the architecturally significant moosi maharani ki chhatri palace and 10 km from the 16 th century alwar fort.
                     </p>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eius-mod tempor incididunt ut labore et dolore
-                      magna aliqua. Ut enim ad{" "}
+                    Beautiful room have free Wi Fi,flat screen TV and tea and coffee makers,as well as mini fridge and intercom upgrade add sitting area and open Terris lawn; suite provide living room.{" "}
                     </p>
                   </div>
                   {/* /section-title */}
-                  <div className="about-footer-content d-sm-flex align-items-center mt-20">
-                    <div className="signature pt-20 pr-45">
-                      <img src="images/about/signature.png" alt="signature" />
+                  <div className="about-footer-content flex flex-col sm:flex-row items-center mt-6 sm:mt-8"> {/* Adjusted layout for mobile */}
+                    <div className="signature pb-4 sm:pb-0 sm:pr-8">
+                      <img src="images/about/signature.png" alt="signature" className="max-w-full h-auto" /> {/* Made image responsive */}
                     </div>
-                    <div className="about-footer-content-right mt-20 text-left">
-                      <h6 className="d-inline-block pr-2 mb-0">Bruce Wayne</h6>
-                      <span className="meta-text-color">Managin Director</span>
+                    <div className="about-footer-content-right text-center sm:text-left">
+                      <h6 className="inline-block pr-2 mb-0">Guru Vachan</h6>
+                      <span className="meta-text-color">Managing Director</span>
                     </div>
                   </div>
                   {/* /about-footer-content */}
@@ -101,196 +103,7 @@ const page = () => {
         <div className="rooms-hm2-area hm2 mt-60 md:mt-80 mb-60 md:mb-80">
          
           <div className="container-fluid container-wrapper p-md-0">
-            <div className="row rooms-hm2-wrapper no-gutters align-items-md-center img-hover-effect-wrapper">
-              <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 px-xl-0">
-                <div className="room-hm2-img zoom-img-hover transition3 img-hover-effect2 over-hidden position-relative">
-                  <img
-                    className="w-100 img"
-                    src="images/room/hm2-room-img1.jpg"
-                    alt="room image 01"
-                  />
-                </div>
-                {/* /room-hm2-img */}
-              </div>
-              {/* /col */}
-              <div className="col-xl-6 col-lg-6 col-md-6  col-sm-12 col-12">
-        <div className="room-hm2-content mt-4 md:mt-0 px-4 md:px-8">
-                
-                  
-                  {/* /ratting a */}
-                  <div className="section-content-title">
-                    <h2 className="mb-3 text-2xl md:text-3xl">Simple Single Delux</h2>
-                    <p>
-                      Bipor incididunt ut labore et dolore magna liqu Ut enim ad
-                      teros ut bione bore et dolore magna aliqua. Ut enim ad
-                      conm dolor
-                    </p>
-                  </div>
-                  {/* /title */}
-                  <div className="room-info-details mt-25">
-                    <div className="room-price">
-                      <p className="mr-20 d-inline-block mb-0">Starts From</p>
-                      <span className="room-price f-700 main-color fontNoto text-uppercase ">
-                        <span className="theme-color mr-2">$299</span>/ Night
-                      </span>
-                    </div>
-                    {/* /room-price-details */}
-                   <div className="flex justify-center"></div>
-                    <div className="my-btn d-inline-block pr-40 mt-3">
-                      <Link href="rooms-details" className="btn theme-bg w-100">
-                        book now
-                      </Link>
-                    </div>
-                    {/* / btn */}
-                    <div className="my-btn2 d-inline-block position-relative transition5">
-                      <Link
-                        href="rooms-details"
-                        className="btn position-relative rounded-0 transition5"
-                      >
-                        More Details
-                      </Link>
-                    </div>
-                    {/* / btn */}
-                  </div>
-                  {/* /room-price-details */}
-                </div>
-                {/* /room-hm1-content */}
-              </div>
-              {/* /col */}
-            </div>
-            {/* /row */}
-            <div className="row rooms-hm2-wrapper rooms-hm2-wrapper2 no-gutters align-items-md-center flex-column-reverse flex-md-row img-hover-effect-wrapper">
-              <div className="col-xl-6 col-lg-6 col-md-6  col-sm-12 col-12">
-        <div className="room-hm2-content mt-4 md:mt-0 px-4 md:px-8">
-                
-                
-                  {/* /ratting a */}
-                  <div className="section-content-title">
-                    <h2 className="mb-3 text-2xl md:text-3xl">Luxury Single Delux</h2>
-                    <p>
-                      Bipor incididunt ut labore et dolore magna liqu Ut enim ad
-                      teros ut bione bore et dolore magna aliqua. Ut enim ad
-                      conm dolor
-                    </p>
-                  </div>
-                  {/* /title */}
-                  <div className="room-info-details mt-25">
-                    <div className="room-price">
-                      <p className="mr-20 d-inline-block mb-0">Starts From</p>
-                      <span className="room-price f-700 main-color fontNoto text-uppercase ">
-                        <span className="theme-color mr-2">$399</span>/ Night
-                      </span>
-                    </div>
-                    {/* /room-price-details */}
-                   
-                    <div className="my-btn d-inline-block pr-40 mt-3">
-                      <Link href="rooms-details" className="btn theme-bg w-100">
-                        book now
-                      </Link>
-                    </div>
-                    {/* / btn */}
-                    <div className="my-btn2 d-inline-block position-relative transition5">
-                      <Link
-                        href="rooms-details"
-                        className="btn position-relative rounded-0 transition5"
-                      >
-                        More Details
-                      </Link>
-                    </div>
-                    {/* / btn */}
-                  </div>
-                  {/* /room-price-details */}
-                </div>
-                {/* /room-hm1-content */}
-              </div>
-              {/* /col */}
-              <div className="col-xl-6 col-lg-6 col-md-6  col-sm-12 col-12">
-                <div className="room-hm2-img zoom-img-hover transition3 img-hover-effect2 over-hidden position-relative">
-                  <img
-                    className="w-100 img"
-                    src="images/room/hm2-room-img2.jpg"
-                    alt="room image 02"
-                  />
-                </div>
-                {/* /room-hm2-img */}
-              </div>
-              {/* /col */}
-            </div>
-            {/* /row */}
-            <div className="row rooms-hm2-wrapper no-gutters align-items-md-center img-hover-effect-wrapper">
-              <div className="col-xl-6 col-lg-6 col-md-6  col-sm-12 col-12">
-                <div className="room-hm2-img zoom-img-hover transition3 img-hover-effect2 over-hidden position-relative">
-                  <img
-                    className="w-100 img"
-                    src="images/room/hm2-room-img3.jpg"
-                    alt="room image 03"
-                  />
-                </div>
-                {/* /room-hm2-img */}
-              </div>
-              {/* /col */}
-              <div className="col-xl-6 col-lg-6 col-md-6  col-sm-12 col-12">
-        <div className="room-hm2-content mt-4 md:mt-0 px-4 md:px-8">
-                
-                  
-                  {/* /ratting a */}
-                  <div className="section-content-title">
-                    <h2 className="mb-3 text-2xl md:text-3xl">Luxury Super Double</h2>
-                    <p>
-                      Bipor incididunt ut labore et dolore magna liqu Ut enim ad
-                      teros ut bione bore et dolore magna aliqua. Ut enim ad
-                      conm dolor
-                    </p>
-                  </div>
-                  {/* /title */}
-                  <div className="room-info-details mt-25">
-                    <div className="room-price">
-                      <p className="mr-20 d-inline-block mb-0">Starts From</p>
-                      <span className="room-price f-700 main-color fontNoto text-uppercase ">
-                        <span className="theme-color mr-2">$499</span>/ Night
-                      </span>
-                    </div>
-                    {/* /room-price-details */}
-                  
-                    <div className="my-btn d-inline-block pr-40 mt-3">
-                      <Link href="rooms-details" className="btn theme-bg w-100">
-                        book now
-                      </Link>
-                    </div>
-                    {/* / btn */}
-                    <div className="my-btn2 d-inline-block position-relative transition5">
-                      <Link
-                        href="rooms-details"
-                        className="btn position-relative rounded-0 transition5"
-                      >
-                        More Details
-                      </Link>
-                    </div>
-                    {/* / btn */}
-                  </div>
-                  {/* /room-price-details */}
-                </div>
-                {/* /room-hm1-content */}
-              </div>
-              {/* /col */}
-            </div>
-            {/* /row */}
-            {/* <div className="hm2-rooms-btn transparent-btn text-center mt-60">
-              <div className="my-btn d-inline-block pr-40">
-                <Link
-                  href="rooms-details"
-                  className="btn transparent-btn w-100"
-                >
-                  view all
-                </Link>
-              </div>
-              / btn
-              <div class="my-btn d-inline-block pr-40">
-                  <Link href="rooms-details" class="btn theme-bg w-100">book now</Link>
-              </div>/ btn
-            </div> */}
-            
-            {/* /rooms-btn */}
+                <Rooms />
           </div>
           {/* /container */}
         </div>

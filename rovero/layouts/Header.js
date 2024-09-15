@@ -18,49 +18,10 @@ const DesktopMenu = () => {
         {/* /About */}
         <li>
           <a href="rooms2">Rooms</a>
-          {/* <ul className="mega-menu mega-dropdown-menu white-bg ml-0">
-            <li>
-              <Link href="rooms">Rooms 01</Link>
-            </li>
-            <li>
-              <Link href="rooms2">Rooms 02</Link>
-            </li>
-            <li>
-              <Link href="rooms-details">Rooms details</Link>
-            </li>
-          </ul> */}
+
         </li>
-        {/* /Home */}
-        {/* <li>
-          <a href="#">Reservation</a>
-          <ul className="mega-menu mega-dropdown-menu white-bg ml-0">
-            <li>
-              <Link href="booking">Booking</Link>
-            </li>
-            <li>
-              <Link href="checkout">Checkout</Link>
-            </li>
-            <li>
-              <Link href="confirmation">Confirmation</Link>
-            </li>
-          </ul>
-        </li> */}
-        {/* /Pages */}
-        {/* <li>
-          <a href="#">News</a>
-          <ul className="mega-menu mega-dropdown-menu white-bg ml-0">
-            <li>
-              <Link href="blog">News</Link>
-            </li>
-            <li>
-              <Link href="blog-details">News details</Link>
-            </li>
-            <li>
-              <Link href="blog-details2">News details 2</Link>
-            </li>
-          </ul>
-        </li> */}
-        {/* /News */}
+
+
         <li>
           <Link href="contact">Contact</Link>
         </li>

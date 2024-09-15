@@ -183,7 +183,7 @@ export const Hero2 = () => {
               <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
                 <div className="slider-content slider-content1 mt-50 text-center px-sm--3">
                   <span className="text-white text-uppercase fontNoto f-700">
-                    The Rovero
+                    The Cloud9
                   </span>
                   <h1
                     className="text-white mb-30 f-700"
@@ -191,101 +191,14 @@ export const Hero2 = () => {
                     data-aos-duration={2000}
                     data-aos-delay={150}
                   >
-                    Enjoy Your Next Vacation at Rovero
+                    Enjoy Your Next Vacation at Cloud9
                   </h1>
                   <p
                     className="text-white mb-55"
                     data-aos="fade-up"
                     data-aos-duration={1700}
                   >
-                    Bipor incididunt ut labore et dolore magna liqu Ut enim ad
-                    minim veniam quis nostrud
-                  </p>
-                  <div className="my-btn d-inline-block">
-                    <Link href="rooms-details" className="btn theme-bg">
-                      book now
-                    </Link>
-                  </div>
-                  {/* / btn */}
-                </div>
-                {/* /slider-content */}
-              </div>
-              {/* /col */}
-            </div>
-            {/* /row */}
-          </div>
-          {/* /container */}
-        </div>
-        {/* /slider-height */}
-        <div
-          className="single-slider slider-height2 d-flex align-items-center z-index1 black-overly"
-          data-background="images/hero/hm2-hero-bg-img2.jpg"
-        >
-          <div className="container">
-            <div className="row align-items-center justify-content-center">
-              <div className="col-xl-8 col-lg-8  col-md-8  col-sm-12 col-12">
-                <div className="slider-content slider-content1 mt-50 text-center px-3">
-                  <span className="text-white text-uppercase fontNoto f-700">
-                    The Rovero
-                  </span>
-                  <h1
-                    className="text-white mb-30 f-700"
-                    data-aos="fade-up"
-                    data-aos-duration={2000}
-                    data-aos-delay={150}
-                  >
-                    Enjoy Your Next Vacation at Rovero
-                  </h1>
-                  <p
-                    className="text-white mb-55"
-                    data-aos="fade-up"
-                    data-aos-duration={1700}
-                  >
-                    Bipor incididunt ut labore et dolore magna liqu Ut enim ad
-                    minim veniam quis nostrud
-                  </p>
-                  <div className="my-btn d-inline-block">
-                    <Link href="rooms-details" className="btn theme-bg">
-                      book now
-                    </Link>
-                  </div>
-                  {/* / btn */}
-                </div>
-                {/* /slider-content */}
-              </div>
-              {/* /col */}
-            </div>
-            {/* /row */}
-          </div>
-          {/* /container */}
-        </div>
-        {/* /slider-height */}
-        <div
-          className="single-slider slider-height2 d-flex align-items-center z-index1 black-overly"
-          data-background="images/hero/hm2-hero-bg-img3.jpg"
-        >
-          <div className="container">
-            <div className="row align-items-center justify-content-center">
-              <div className="col-xl-8 col-lg-8  col-md-8  col-sm-12 col-12">
-                <div className="slider-content slider-content1 mt-50 text-center px-3">
-                  <span className="text-white text-uppercase fontNoto f-700">
-                    The Rovero
-                  </span>
-                  <h1
-                    className="text-white mb-30 f-700"
-                    data-aos="fade-up"
-                    data-aos-duration={2000}
-                    data-aos-delay={150}
-                  >
-                    Enjoy Your Next Vacation at Rovero
-                  </h1>
-                  <p
-                    className="text-white mb-55"
-                    data-aos="fade-up"
-                    data-aos-duration={1700}
-                  >
-                    Bipor incididunt ut labore et dolore magna liqu Ut enim ad
-                    minim veniam quis nostrud
+                   Experience luxury and comfort like never before—your perfect stay awaits.
                   </p>
                   <div className="my-btn d-inline-block">
                     <Link href="rooms-details" className="btn theme-bg">
