@@ -17,7 +17,7 @@ const DesktopMenu = () => {
         </li>
         {/* /About */}
         <li>
-          <a href="rooms2">Rooms</a>
+          <a href="rooms">Rooms</a>
 
         </li>
 
@@ -53,7 +53,7 @@ const MobileMenu = () => {
         </li>
         {/* /About */}
         <li>
-          <a href="rooms2">Rooms</a>
+          <a href="rooms">Rooms</a>
          
           
         </li>

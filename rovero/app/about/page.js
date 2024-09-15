@@ -599,9 +599,9 @@ const page = () => {
         {/* /container */}
       </div>
       {/* choose-us-area-end */}
-      <Testimonial />
+      {/* <Testimonial />
       <Brand />
-      <Subscribe />
+      <Subscribe /> */}
     </RoveroLayout>
   );
 };
