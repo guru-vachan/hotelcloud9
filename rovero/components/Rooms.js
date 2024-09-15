@@ -168,7 +168,7 @@ const RoomCard = ({ imageUrl, title, description, price, reverse, slug }) => {
                 </span>
               </div>
               <div className="my-btn d-inline-block pr-40 mt-3">
-                <Link href={`/rooms-details/${slug}`} className="btn theme-bg w-100">
+                <Link href={`/rooms/${slug}/details`} className="btn theme-bg w-100">
                   Book Now
                 </Link>
               </div>
