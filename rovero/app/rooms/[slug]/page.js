@@ -30,20 +30,7 @@ const RoomDetails = ({ params }) => {
                       <Link href={`/rooms-details/${roomData.slug}`}>{roomData.title}</Link>
                     </h2>
                   </div>
-                  {/* /title */}
-                  <div className="ratting-area pt-2">
-                    <ul className="review-ratting">
-                      {[...Array(Math.floor(roomData.rating))].map((_, index) => (
-                        <li key={index}>
-                          <span>
-                            <i className="fa fa-star" />
-                          </span>
-                        </li>
-                      ))}
-                    </ul>
-                    {/* /ratting */}
-                    <p className="mb-0">{roomData.reviews} Reviews</p>
-                  </div>
+                
                   {/* /ratting a */}
                 </div>
                 {/* /rd-heading */}
