@@ -6,7 +6,7 @@ module.exports = {
             "heading": "Welcome to Cloud9",
             "title": "Enjoy Your Next Vacation at Cloud9",
             "description": "Experience luxury and comfort like never before—your perfect stay awaits.",
-            "image":  "/images/gallery/1.jpg",
+            "image":  "/images/gallery/32.webp",
         },
     ],
     "gallery": [
