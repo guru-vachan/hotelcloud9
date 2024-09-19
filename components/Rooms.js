@@ -40,7 +40,7 @@ const RoomCard = ({ imageUrl, title, description, price, reverse, slug }) => {
           <div className="flex flex-col sm:flex-row gap-4">
             
             <div className="my-btn d-inline-block">
-                      <Link href="/rooms" className="btn theme-bg">
+                      <Link href={`/rooms/${slug}`} className="btn theme-bg">
                       View Details
                       </Link>
                     </div>
