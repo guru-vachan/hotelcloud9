@@ -114,12 +114,12 @@ module.exports = {
             "/images/room-1/5.jpg",
             "/images/room-1/6.jpg",
           ],
-          "bookingUrls": {
-            "direct": "/booking/premium-room",
-            "bookingCom": "https://www.booking.com/hotel/premium-room",
-            "airbnb": "https://www.airbnb.com/rooms/premium-room",
-            "expedia": "https://www.expedia.com/hotel/premium-room"
-          }
+          "bookingUrls": [
+              { name: 'Book Direct', logo: '/images/logos/hotel-logo.png', url: '/booking/premium-room' },
+              { name: 'Booking.com', logo: '/images/logos/booking-logo.png', url: 'https://www.booking.com/hotel/premium-room' },
+              { name: 'Airbnb', logo: '/images/logos/airbnb-logo.png', url: 'https://www.airbnb.com/rooms/premium-room' },
+              { name: 'Expedia', logo: '/images/logos/expedia-logo.png', url: 'https://www.expedia.com/hotel/premium-room' }
+          ]
         },
         {
           "id": 2,
@@ -155,12 +155,12 @@ module.exports = {
             "/images/room-2/6.jpg",
             "/images/room-2/7.jpg",
           ],
-          "bookingUrls": {
-            "direct": "/booking/super-premium",
-            "bookingCom": "https://www.booking.com/hotel/super-premium",
-            "airbnb": "https://www.airbnb.com/rooms/super-premium",
-            "expedia": "https://www.expedia.com/hotel/super-premium"
-          }
+          "bookingUrls": [
+              { name: 'Book Direct', logo: '/images/logos/hotel-logo.png', url: '/booking/super-premium' },
+              { name: 'Booking.com', logo: '/images/logos/booking-logo.png', url: 'https://www.booking.com/hotel/super-premium' },
+              { name: 'Airbnb', logo: '/images/logos/airbnb-logo.png', url: 'https://www.airbnb.com/rooms/super-premium' },
+              { name: 'Expedia', logo: '/images/logos/expedia-logo.png', url: 'https://www.expedia.com/hotel/super-premium' }
+          ]
         },
         {
           "id": 3,
@@ -194,12 +194,12 @@ module.exports = {
             "/images/room-3/3.jpg",
             "/images/room-3/4.jpg",
           ],
-          "bookingUrls": {
-            "direct": "/booking/vip-suite-room",
-            "bookingCom": "https://www.booking.com/hotel/vip-suite-room",
-            "airbnb": "https://www.airbnb.com/rooms/vip-suite-room",
-            "expedia": "https://www.expedia.com/hotel/vip-suite-room"
-          }
+          "bookingUrls": [
+              { name: 'Book Direct', logo: '/images/logos/hotel-logo.png', url: '/booking/vip-suite-room' },
+              { name: 'Booking.com', logo: '/images/logos/booking-logo.png', url: 'https://www.booking.com/hotel/vip-suite-room' },
+              { name: 'Airbnb', logo: '/images/logos/airbnb-logo.png', url: 'https://www.airbnb.com/rooms/vip-suite-room' },
+              { name: 'Expedia', logo: '/images/logos/expedia-logo.png', url: 'https://www.expedia.com/hotel/vip-suite-room' }
+          ]
         }
       ]
 }

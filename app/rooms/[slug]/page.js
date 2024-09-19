@@ -1,15 +1,23 @@
 import Breadcrumb from "@/components/Breadcrumb";
 import RoveroLayout from "@/layouts/RoveroLayout";
 import Link from "next/link";
+import Image from 'next/image';
 import config from "@/utility/config";
 
 const RoomDetails = ({ params }) => {
   const { slug } = params;
-  const roomData  = config.rooms.find(room => room.slug === slug);
+  const roomData = config.rooms.find(room => room.slug === slug);
 
   if (!roomData) {
     return <div>Room not found</div>;
   }
+
+  const bookingPlatforms = [
+    { name: 'Book Direct', logo: '/images/logos/hotel-logo.png', key: 'direct' },
+    { name: 'Booking.com', logo: '/images/logos/booking-logo.png', key: 'bookingCom' },
+    { name: 'Airbnb', logo: '/images/logos/airbnb-logo.png', key: 'airbnb' },
+    { name: 'Expedia', logo: '/images/logos/expedia-logo.png', key: 'expedia' },
+  ];
 
   return (
     <RoveroLayout>
@@ -19,7 +27,6 @@ const RoomDetails = ({ params }) => {
         pageTitle={roomData.title}
         pageSubTitle={roomData.description}
       />
-      {/* ====== rooms-details-page-area-start =============================================== */}
       <div className="rooms-details-page-area mt-120">
         <div className="container">
           <div className="row rooms-details-page-wrapper">
@@ -111,7 +118,32 @@ const RoomDetails = ({ params }) => {
             {/* /col */}
             
             {/* Add the sidebar here */}
-            
+            <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+              <div className="rooms-details-sidebar">
+                <div className="rd-sidebar-widget mb-30">
+                  <h4 className="rd-sidebar-title mb-25">Book Now</h4>
+                  <ul className="booking-platforms-list">
+                    {roomData.bookingUrls.map((platform, index) => (
+               
+                        <li key={index} className="mb-3">
+                          <a href={roomData.bookingUrls[platform.key]} target="_blank" rel="noopener noreferrer" className="d-flex align-items-center">
+                            <Image
+                              src={platform.logo}
+                              alt={platform.name}
+                              width={30}
+                              height={30}
+                              className="mr-3"
+                            />
+                            <span>{platform.name}</span>
+                          </a>
+                        </li>
+                     
+                    ))}
+                  </ul>
+                </div>
+                {/* ... other sidebar widgets ... */}
+              </div>
+            </div>
           </div>
           {/* /row */}
         </div>
