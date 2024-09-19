@@ -6,28 +6,60 @@ module.exports = {
             "heading": "Welcome to Cloud9",
             "title": "Enjoy Your Next Vacation at Cloud9",
             "description": "Experience luxury and comfort like never before—your perfect stay awaits.",
-            "image": "/images/pages/about.jpg"
+            "image":  "/images/gallery/1.jpg",
         },
     ],
-    "offer": [
+    "gallery": [
+        "/images/gallery/1.jpg",
+        "/images/gallery/2.jpg",
+        "/images/gallery/3.jpg",
+        "/images/gallery/4.jpg",
+        "/images/gallery/5.jpg",
+        "/images/gallery/6.jpg",
+        "/images/gallery/7.jpg",
+        "/images/gallery/8.jpg",
+        "/images/gallery/11.jpg",
+        "/images/gallery/12.jpg",
+        "/images/gallery/13.jpg",
+        "/images/gallery/14.jpg",
+        "/images/gallery/15.jpg",
+        "/images/gallery/16.jpg",
+        "/images/gallery/17.jpg",
+        "/images/gallery/18.jpg",
+        "/images/gallery/19.jpg",
+        "/images/gallery/20.jpg",
+        "/images/gallery/21.jpg",
+        "/images/gallery/22.jpg",
+        "/images/gallery/23.jpg",
+        "/images/gallery/24.jpg",
+        "/images/gallery/25.jpg",
+        "/images/gallery/26.jpg",
+        "/images/gallery/27.jpg",
+        "/images/gallery/28.jpg",
+        "/images/gallery/29.jpg",
+        "/images/gallery/30.jpg",
+        "/images/gallery/31.jpg",
+        
+    ],
+    "offers": [
         {
           "title": "Holiday Special Offer",
           "description": "Toma onsectetur adipisicing elit, sed do eiusmod tiusmod temp",
-          "image": "images/offer/hm2-offer-img1.jpg",
+          "image": "/images/gallery/1.jpg",
           "price": 299,
           "duration": "2 Days & 3 Nights"
         },
         {
           "title": "Honeymoon Offer",
           "description": "Toma onsectetur adipisicing elit, sed do eiusmod tiusmod temp",
-          "image": "images/offer/hm2-offer-img2.jpg",
+          "image": "/images/gallery/2.jpg",
           "price": 299,
           "duration": "2 Days & 3 Nights"
         },
         {
           "title": "Holiday Special Offer",
           "description": "Toma onsectetur adipisicing elit, sed do eiusmod tiusmod temp",
-          "image": "images/offer/hm2-offer-img3.jpg",
+          "image": "/images/gallery/3.jpg",
           "price": 299,
           "duration": "2 Days & 3 Nights"
         }
@@ -36,29 +68,29 @@ module.exports = {
         "about": {
             "title": "About us",
             "description": "Experience luxury and comfort like never before—your perfect stay awaits.",
-            "image": "/images/pages/about.jpg"
+            "image": "/images/gallery/1.jpg",
         },
         "rooms": {
             "title": "Rooms",
             "description": "Experience luxury and comfort like never before—your perfect stay awaits.",
-            "image": "/images/pages/rooms.jpg"
+            "image": "/images/gallery/4.jpg",
         },
         "contact": {
             "title": "Contact us",
             "description": "Experience luxury and comfort like never before—your perfect stay awaits.",
-            "image": "/images/pages/contact.jpg"
+            "image": "/images/gallery/3.jpg",
         }, 
     },
     "rooms": [
         {
           "id": 1,
           "slug": "premium-room",
-          "imageUrl": "images/room/hm2-room-img1.jpg",
+          "imageUrl": "/images/room-1/3.jpg",
           "title": "Premium Room",
           "description": "Indulge in our Premium Room—luxurious space with stunning views, upscale amenities, and unmatched comfort.",
           "price": 2749,
           "reverse": false,
-          "bgImage": "/images/rooms-details/rooms-details-page-hero-bg.jpg",
+          "bgImage":  "/images/room-1/2.jpg",
           "size": "30 sf",
           "capacity": "2 Guests",
           "beds": "1 King Bed",
@@ -76,12 +108,11 @@ module.exports = {
             { "name": "24-hour room service", "icon": "images/icon/facilities-icon7.png" }
           ],
           "galleryImages": [
-            "images/rooms-details/rd-gallery-img1.jpg",
-            "images/rooms-details/rd-gallery-img2.jpg",
-            "images/rooms-details/rd-gallery-img3.jpg",
-            "images/rooms-details/rd-gallery-img4.jpg",
-            "images/rooms-details/rd-gallery-img5.jpg",
-            "images/rooms-details/rd-gallery-img6.jpg"
+            "/images/room-1/2.jpg",
+            "/images/room-1/3.jpg",
+            "/images/room-1/4.jpg",
+            "/images/room-1/5.jpg",
+            "/images/room-1/6.jpg",
           ],
           "bookingUrls": {
             "direct": "/booking/premium-room",
@@ -93,12 +124,12 @@ module.exports = {
         {
           "id": 2,
           "slug": "super-premium",
-          "imageUrl": "images/room/hm2-room-img2.jpg",
+          "imageUrl":  "/images/room-2/2.jpg",
           "title": "Super Premium",
           "description": "Enjoy unrivaled luxury in our Super Premium Room—elegant decor, exceptional comfort, and top-tier amenities.",
           "price": 3299,
           "reverse": true,
-          "bgImage": "/images/rooms-details/rooms-details-page-hero-bg.jpg",
+          "bgImage":  "/images/room-2/1.jpg",
           "size": "40 sf",
           "capacity": "2 Guests",
           "beds": "1 King Bed",
@@ -116,12 +147,13 @@ module.exports = {
             { "name": "Evening turndown service", "icon": "images/icon/facilities-icon7.png" }
           ],
           "galleryImages": [
-            "images/rooms-details/rd-gallery-img1.jpg",
-            "images/rooms-details/rd-gallery-img2.jpg",
-            "images/rooms-details/rd-gallery-img3.jpg",
-            "images/rooms-details/rd-gallery-img4.jpg",
-            "images/rooms-details/rd-gallery-img5.jpg",
-            "images/rooms-details/rd-gallery-img6.jpg"
+            "/images/room-2/1.jpg",
+            "/images/room-2/2.jpg",
+            "/images/room-2/3.jpg",
+            "/images/room-2/4.jpg",
+            "/images/room-2/5.jpg",
+            "/images/room-2/6.jpg",
+            "/images/room-2/7.jpg",
           ],
           "bookingUrls": {
             "direct": "/booking/super-premium",
@@ -133,12 +165,12 @@ module.exports = {
         {
           "id": 3,
           "slug": "vip-suite-room",
-          "imageUrl": "images/room/hm2-room-img3.jpg",
+          "imageUrl": "/images/room-3/3.jpg",
           "title": "VIP Suite Room",
           "description": "Experience ultimate luxury in our VIP Suite—spacious, elegant, with exclusive amenities and breathtaking views",
           "price": 5999,
           "reverse": false,
-          "bgImage": "/images/rooms-details/rooms-details-page-hero-bg.jpg",
+          "bgImage": "/images/room-3/1.jpg",
           "size": "60 sf",
           "capacity": "4 Guests",
           "beds": "1 King Bed, 1 Sofa Bed",
@@ -157,12 +189,10 @@ module.exports = {
             { "name": "Access to VIP lounge", "icon": "images/icon/facilities-icon6.png" }
           ],
           "galleryImages": [
-            "images/rooms-details/rd-gallery-img1.jpg",
-            "images/rooms-details/rd-gallery-img2.jpg",
-            "images/rooms-details/rd-gallery-img3.jpg",
-            "images/rooms-details/rd-gallery-img4.jpg",
-            "images/rooms-details/rd-gallery-img5.jpg",
-            "images/rooms-details/rd-gallery-img6.jpg"
+            "/images/room-3/1.jpg",
+            "/images/room-3/2.jpg",
+            "/images/room-3/3.jpg",
+            "/images/room-3/4.jpg",
           ],
           "bookingUrls": {
             "direct": "/booking/vip-suite-room",

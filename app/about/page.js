@@ -4,7 +4,7 @@ import Subscribe from "@/components/Subscribe";
 import Testimonial from "@/components/Testimonial";
 import RoveroLayout from "@/layouts/RoveroLayout";
 import Link from "next/link";
-import { pages } from "@/utility/config";
+import { pages, gallery } from "@/utility/config";
 
 const page = () => {
   return (
@@ -66,379 +66,69 @@ const page = () => {
       {/* ====== about-photo-gallery-area-start =============================================== */}
       <div className="about-photo-gallery-area mt-105 mb-100">
         <div className="container-fluid p-md-0">
-          <ul className="about-gallery-active d-none">
-            <li>
-              <div className="row d-flex about-photo-gallery-wrapper  moveSlideshow about-gallery-activ no-gutters d-non align-items-center">
-                <div className="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
-                  <div className="about-photo-gallery-img gallery-img-hover position-relative transition5">
-                    <a
-                      data-fancybox="images"
-                      href="images/about-page/about-gallery-img1.jpg"
-                    >
-                      <img
-                        className="w-100"
-                        src="images/about-page/about-gallery-img1.jpg"
-                        alt="gallery image 01"
-                      />
-                      <span className="gallery-hover text-center theme-color position-absolute transition5 z-index11">
-                        <i className="fa-solid fa-plus" />
-                      </span>
-                      {/* /port-content */}
-                    </a>
-                  </div>
-                  {/* /about-photo-gallery-img */}
-                  <div className="about-photo-gallery-img gallery-img-hover position-relative transition5">
-                    <a
-                      data-fancybox="images"
-                      href="images/about-page/about-gallery-img2.jpg"
-                    >
-                      <img
-                        className="w-100"
-                        src="images/about-page/about-gallery-img2.jpg"
-                        alt="gallery image 02"
-                      />
-                      <span className="gallery-hover text-center theme-color position-absolute transition5 z-index11">
-                        <i className="fa-solid fa-plus" />
-                      </span>
-                      {/* /port-content */}
-                    </a>
-                  </div>
-                  {/* /about-photo-gallery-img */}
-                </div>
-                {/* /col */}
-                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                  <div className="about-photo-gallery-img gallery-img-hover position-relative transition5">
-                    <a
-                      data-fancybox="images"
-                      href="images/about-page/about-gallery-img3.jpg"
-                    >
-                      <img
-                        className="w-100"
-                        src="images/about-page/about-gallery-img3.jpg"
-                        alt="gallery image 03"
-                      />
-                      <span className="gallery-hover text-center theme-color position-absolute transition5 z-index11">
-                        <i className="fa-solid fa-plus" />
-                      </span>
-                      {/* /port-content */}
-                    </a>
-                  </div>
-                  {/* /about-photo-gallery-img */}
-                </div>
-                {/* /col */}
-                <div className="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
-                  <div className="about-photo-gallery-img gallery-img-hover position-relative transition5">
-                    <a
-                      data-fancybox="images"
-                      href="images/about-page/about-gallery-img4.jpg"
-                    >
-                      <img
-                        className="w-100"
-                        src="images/about-page/about-gallery-img4.jpg"
-                        alt="gallery image 04"
-                      />
-                      <span className="gallery-hover text-center theme-color position-absolute transition5 z-index11">
-                        <i className="fa-solid fa-plus" />
-                      </span>
-                      {/* /port-content */}
-                    </a>
-                  </div>
-                  {/* /about-photo-gallery-img */}
-                  <div className="about-photo-gallery-img gallery-img-hover position-relative transition5">
-                    <a
-                      data-fancybox="images"
-                      href="images/about-page/about-gallery-img5.jpg"
-                    >
-                      <img
-                        className="w-100"
-                        src="images/about-page/about-gallery-img5.jpg"
-                        alt="gallery image 05"
-                      />
-                      <span className="gallery-hover text-center theme-color position-absolute transition5 z-index11">
-                        <i className="fa-solid fa-plus" />
-                      </span>
-                      {/* /port-content */}
-                    </a>
-                  </div>
-                  {/* /about-photo-gallery-img */}
-                </div>
-                {/* /col */}
-                <div className="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
-                  <div className="about-photo-gallery-img gallery-img-hover position-relative transition5">
-                    <a
-                      data-fancybox="images"
-                      href="images/about-page/about-gallery-img6.jpg"
-                    >
-                      <img
-                        className="w-100"
-                        src="images/about-page/about-gallery-img6.jpg"
-                        alt="gallery image 06"
-                      />
-                      <span className="gallery-hover text-center theme-color position-absolute transition5 z-index11">
-                        <i className="fa-solid fa-plus" />
-                      </span>
-                      {/* /port-content */}
-                    </a>
-                  </div>
-                  {/* /about-photo-gallery-img */}
-                </div>
-                {/* /col */}
-              </div>
-              {/* /row */}
-            </li>
-            <li>
-              <div className="row d-flex about-photo-gallery-wrapper  moveSlideshow about-gallery-activ no-gutters d-non align-items-center">
-                <div className="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
-                  <div className="about-photo-gallery-img gallery-img-hover position-relative transition5">
-                    <a
-                      data-fancybox="images"
-                      href="images/about-page/about-gallery-img1.jpg"
-                    >
-                      <img
-                        className="w-100"
-                        src="images/about-page/about-gallery-img1.jpg"
-                        alt="gallery image 01"
-                      />
-                      <span className="gallery-hover text-center theme-color position-absolute transition5 z-index11">
-                        <i className="fa-solid fa-plus" />
-                      </span>
-                      {/* /port-content */}
-                    </a>
-                  </div>
-                  {/* /about-photo-gallery-img */}
-                  <div className="about-photo-gallery-img gallery-img-hover position-relative transition5">
-                    <a
-                      data-fancybox="images"
-                      href="images/about-page/about-gallery-img2.jpg"
-                    >
-                      <img
-                        className="w-100"
-                        src="images/about-page/about-gallery-img2.jpg"
-                        alt="gallery image 02"
-                      />
-                      <span className="gallery-hover text-center theme-color position-absolute transition5 z-index11">
-                        <i className="fa-solid fa-plus" />
-                      </span>
-                      {/* /port-content */}
-                    </a>
-                  </div>
-                  {/* /about-photo-gallery-img */}
-                </div>
-                {/* /col */}
-                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                  <div className="about-photo-gallery-img gallery-img-hover position-relative transition5">
-                    <a
-                      data-fancybox="images"
-                      href="images/about-page/about-gallery-img3.jpg"
-                    >
-                      <img
-                        className="w-100"
-                        src="images/about-page/about-gallery-img3.jpg"
-                        alt="gallery image 03"
-                      />
-                      <span className="gallery-hover text-center theme-color position-absolute transition5 z-index11">
-                        <i className="fa-solid fa-plus" />
-                      </span>
-                      {/* /port-content */}
-                    </a>
-                  </div>
-                  {/* /about-photo-gallery-img */}
-                </div>
-                {/* /col */}
-                <div className="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
-                  <div className="about-photo-gallery-img gallery-img-hover position-relative transition5">
-                    <a
-                      data-fancybox="images"
-                      href="images/about-page/about-gallery-img4.jpg"
-                    >
-                      <img
-                        className="w-100"
-                        src="images/about-page/about-gallery-img4.jpg"
-                        alt="gallery image 04"
-                      />
-                      <span className="gallery-hover text-center theme-color position-absolute transition5 z-index11">
-                        <i className="fa-solid fa-plus" />
-                      </span>
-                      {/* /port-content */}
-                    </a>
-                  </div>
-                  {/* /about-photo-gallery-img */}
-                  <div className="about-photo-gallery-img gallery-img-hover position-relative transition5">
-                    <a
-                      data-fancybox="images"
-                      href="images/about-page/about-gallery-img5.jpg"
-                    >
-                      <img
-                        className="w-100"
-                        src="images/about-page/about-gallery-img5.jpg"
-                        alt="gallery image 05"
-                      />
-                      <span className="gallery-hover text-center theme-color position-absolute transition5 z-index11">
-                        <i className="fa-solid fa-plus" />
-                      </span>
-                      {/* /port-content */}
-                    </a>
-                  </div>
-                  {/* /about-photo-gallery-img */}
-                </div>
-                {/* /col */}
-                <div className="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
-                  <div className="about-photo-gallery-img gallery-img-hover position-relative transition5">
-                    <a
-                      data-fancybox="images"
-                      href="images/about-page/about-gallery-img6.jpg"
-                    >
-                      <img
-                        className="w-100"
-                        src="images/about-page/about-gallery-img6.jpg"
-                        alt="gallery image 06"
-                      />
-                      <span className="gallery-hover text-center theme-color position-absolute transition5 z-index11">
-                        <i className="fa-solid fa-plus" />
-                      </span>
-                      {/* /port-content */}
-                    </a>
-                  </div>
-                  {/* /about-photo-gallery-img */}
-                </div>
-                {/* /col */}
-              </div>
-              {/* /row */}
-            </li>
-          </ul>
           <div className="about-gallery-slider-active">
             <ul className="w-100 about-photo-gallery-wrapper">
               <li className="row d-flex about-photo-gallery-wrapper moveSlideshow no-gutters align-items-center">
                 <div className="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12 d-md-inline-block d-sm-flex d-inline-block align-items-center">
                   <div className="about-photo-gallery-img gallery-img-hover position-relative transition5 ab-g-img-width">
-                    <img
-                      className="w-100"
-                      src="images/about-page/about-gallery-img1.jpg"
-                      alt="gallery image 01"
-                    />
+                    <img className="w-100" src={gallery[0]} alt="gallery image 01" />
                   </div>
-                  {/* /about-photo-gallery-img */}
                   <div className="about-photo-gallery-img gallery-img-hover position-relative transition5 ab-g-img-width">
-                    <img
-                      className="w-100"
-                      src="images/about-page/about-gallery-img2.jpg"
-                      alt="gallery image 02"
-                    />
+                    <img className="w-100" src={gallery[1]} alt="gallery image 02" />
                   </div>
-                  {/* /about-photo-gallery-img */}
                 </div>
-                {/* /col */}
                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                   <div className="about-photo-gallery-img gallery-img-hover position-relative transition5">
-                    <img
-                      className="w-100"
-                      src="images/about-page/about-gallery-img3.jpg"
-                      alt="gallery image 03"
-                    />
+                    <img className="w-100" src={gallery[2]} alt="gallery image 03" />
                   </div>
-                  {/* /about-photo-gallery-img */}
                 </div>
-                {/* /col */}
                 <div className="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-12">
                   <div className="about-photo-gallery-img gallery-img-hover position-relative transition5">
-                    <img
-                      className="w-100"
-                      src="images/about-page/about-gallery-img4.jpg"
-                      alt="gallery image 04"
-                    />
+                    <img className="w-100" src={gallery[3]} alt="gallery image 04" />
                   </div>
-                  {/* /about-photo-gallery-img */}
                   <div className="about-photo-gallery-img gallery-img-hover position-relative transition5">
-                    <img
-                      className="w-100"
-                      src="images/about-page/about-gallery-img5.jpg"
-                      alt="gallery image 05"
-                    />
+                    <img className="w-100" src={gallery[4]} alt="gallery image 05" />
                   </div>
-                  {/* /about-photo-gallery-img */}
                 </div>
-                {/* /col */}
                 <div className="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-12">
                   <div className="about-photo-gallery-img gallery-img-hover position-relative transition5">
-                    <img
-                      className="w-100"
-                      src="images/about-page/about-gallery-img6.jpg"
-                      alt="gallery image 06"
-                    />
+                    <img className="w-100" src={gallery[5]} alt="gallery image 06" />
                   </div>
-                  {/* /about-photo-gallery-img */}
                 </div>
-                {/* /col */}
               </li>
-              {/* /li */}
             </ul>
-            {/* /ul */}
+            {/* Duplicate gallery for larger screens */}
             <ul className="w-100 about-photo-gallery-wrapper d-none d-md-inline-block">
               <li className="row d-flex about-photo-gallery-wrapper moveSlideshow no-gutters align-items-center">
+                {/* Same structure as above, but with different gallery images */}
                 <div className="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12 d-md-inline-block d-sm-flex d-inline-block align-items-center">
                   <div className="about-photo-gallery-img gallery-img-hover position-relative transition5 ab-g-img-width">
-                    <img
-                      className="w-100"
-                      src="images/about-page/about-gallery-img1.jpg"
-                      alt="gallery image 01"
-                    />
+                    <img className="w-100" src={gallery[6]} alt="gallery image 07" />
                   </div>
-                  {/* /about-photo-gallery-img */}
                   <div className="about-photo-gallery-img gallery-img-hover position-relative transition5 ab-g-img-width">
-                    <img
-                      className="w-100"
-                      src="images/about-page/about-gallery-img2.jpg"
-                      alt="gallery image 02"
-                    />
+                    <img className="w-100" src={gallery[7]} alt="gallery image 08" />
                   </div>
-                  {/* /about-photo-gallery-img */}
                 </div>
-                {/* /col */}
                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                   <div className="about-photo-gallery-img gallery-img-hover position-relative transition5">
-                    <img
-                      className="w-100"
-                      src="images/about-page/about-gallery-img3.jpg"
-                      alt="gallery image 03"
-                    />
+                    <img className="w-100" src={gallery[8]} alt="gallery image 09" />
                   </div>
-                  {/* /about-photo-gallery-img */}
                 </div>
-                {/* /col */}
                 <div className="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-12">
                   <div className="about-photo-gallery-img gallery-img-hover position-relative transition5">
-                    <img
-                      className="w-100"
-                      src="images/about-page/about-gallery-img4.jpg"
-                      alt="gallery image 04"
-                    />
+                    <img className="w-100" src={gallery[9]} alt="gallery image 10" />
                   </div>
-                  {/* /about-photo-gallery-img */}
                   <div className="about-photo-gallery-img gallery-img-hover position-relative transition5">
-                    <img
-                      className="w-100"
-                      src="images/about-page/about-gallery-img5.jpg"
-                      alt="gallery image 05"
-                    />
+                    <img className="w-100" src={gallery[10]} alt="gallery image 11" />
                   </div>
-                  {/* /about-photo-gallery-img */}
                 </div>
-                {/* /col */}
                 <div className="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-12">
                   <div className="about-photo-gallery-img gallery-img-hover position-relative transition5">
-                    <img
-                      className="w-100"
-                      src="images/about-page/about-gallery-img6.jpg"
-                      alt="gallery image 06"
-                    />
+                    <img className="w-100" src={gallery[11]} alt="gallery image 12" />
                   </div>
-                  {/* /about-photo-gallery-img */}
                 </div>
-                {/* /col */}
               </li>
-              {/* /li */}
             </ul>
-            {/* /ul */}
           </div>
         </div>
         {/* /container */}
