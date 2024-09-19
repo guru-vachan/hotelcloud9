@@ -1,4 +1,3 @@
-
 import config from "@/utility/config";
 import Link from "next/link";
 
@@ -19,38 +18,35 @@ const Rooms = () => {
 export default Rooms;
 
 const RoomCard = ({ imageUrl, title, description, price, reverse, slug }) => {
-    return (
-      <div className={`row rooms-hm2-wrapper no-gutters align-items-md-center img-hover-effect-wrapper ${reverse ? 'flex-column-reverse flex-md-row' : ''}`}>
-        <div className={`col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ${reverse ? 'order-md-2' : ''}`}>
-          <div className="room-hm2-img zoom-img-hover transition3 img-hover-effect2 over-hidden position-relative">
-            <img
-              className="w-100 img"
-              src={imageUrl}
-              alt={`${title} image`}
-            />
-          </div>
+  return (
+    <div className={`flex flex-col ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} items-center mb-12 md:mb-20`}>
+      <div className="w-full md:w-1/2">
+        <div className="relative overflow-hidden">
+          <img
+            className="w-full h-auto object-cover transition-transform duration-300 hover:scale-110"
+            src={imageUrl}
+            alt={`${title} image`}
+          />
         </div>
-        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-          <div className="room-hm2-content mt-4 md:mt-0 px-4 md:px-8">
-            <div className="section-content-title">
-              <h2 className="mb-3 text-2xl md:text-3xl">{title}</h2>
-              <p>{description}</p>
-            </div>
-            <div className="room-info-details mt-25">
-              <div className="room-price">
-                <p className="mr-20 d-inline-block mb-0">Starts From</p>
-                <span className="room-price f-700 main-color fontNoto text-uppercase">
-                  <span className="theme-color mr-2">₹{price}</span>/ Night / Single
-                </span>
-              </div>
-              <div className="my-btn d-inline-block pr-40 mt-3">
-                <Link href={`/rooms/${slug}`} className="btn theme-bg w-100">
-                  Book Now
-                </Link>
-              </div>
-            </div>
+      </div>
+      <div className="w-full md:w-1/2 p-6 md:p-10">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">{title}</h2>
+        <p className="text-gray-700 text-lg mb-6">{description}</p>
+        <div className="flex flex-col sm:flex-row items-center justify-between mb-6">
+          <div className="mb-4 sm:mb-0">
+            <p className="text-sm uppercase text-gray-500 mb-1">Starts From</p>
+            <p className="text-3xl font-bold text-theme-color">₹{price}<span className="text-base font-normal text-gray-600">/night</span></p>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-4">
+            
+            <div className="my-btn d-inline-block">
+                      <Link href="/rooms" className="btn theme-bg">
+                      View Details
+                      </Link>
+                    </div>
           </div>
         </div>
       </div>
-    );
-  };
+    </div>
+  );
+};

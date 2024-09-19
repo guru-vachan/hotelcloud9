@@ -3,11 +3,17 @@ module.exports = {
     "description": "Experience luxury and comfort like never before—your perfect stay awaits.",
     "tile" : [
         {
-            "heading": "Welcome to Cloud9",
+            "heading": "Welcome to afdfCloud9",
             "title": "Enjoy Your Next Vacation at Cloud9",
             "description": "Experience luxury and comfort like never before—your perfect stay awaits.",
             "image":  "/images/gallery/32.webp",
         },
+        {
+          "heading": "Welcome to Csadfasfdloud9",
+          "title": "Enjoy Your Next Vacation at Cloud9",
+          "description": "Experience luxury and comfort like never before—your perfect stay awaits.",
+          "image":  "/images/gallery/1.jpg",
+      },
     ],
     "gallery": [
         "/images/gallery/1.jpg",
@@ -42,27 +48,27 @@ module.exports = {
         
     ],
     "offers": [
-        {
-          "title": "Holiday Special Offer",
-          "description": "Toma onsectetur adipisicing elit, sed do eiusmod tiusmod temp",
-          "image": "/images/gallery/1.jpg",
-          "price": 299,
-          "duration": "2 Days & 3 Nights"
-        },
-        {
-          "title": "Honeymoon Offer",
-          "description": "Toma onsectetur adipisicing elit, sed do eiusmod tiusmod temp",
-          "image": "/images/gallery/2.jpg",
-          "price": 299,
-          "duration": "2 Days & 3 Nights"
-        },
-        {
-          "title": "Holiday Special Offer",
-          "description": "Toma onsectetur adipisicing elit, sed do eiusmod tiusmod temp",
-          "image": "/images/gallery/3.jpg",
-          "price": 299,
-          "duration": "2 Days & 3 Nights"
-        }
+        // {
+        //   "title": "Holiday Special Offer",
+        //   "description": "Toma onsectetur adipisicing elit, sed do eiusmod tiusmod temp",
+        //   "image": "/images/gallery/1.jpg",
+        //   "price": 299,
+        //   "duration": "2 Days & 3 Nights"
+        // },
+        // {
+        //   "title": "Honeymoon Offer",
+        //   "description": "Toma onsectetur adipisicing elit, sed do eiusmod tiusmod temp",
+        //   "image": "/images/gallery/2.jpg",
+        //   "price": 299,
+        //   "duration": "2 Days & 3 Nights"
+        // },
+        // {
+        //   "title": "Holiday Special Offer",
+        //   "description": "Toma onsectetur adipisicing elit, sed do eiusmod tiusmod temp",
+        //   "image": "/images/gallery/3.jpg",
+        //   "price": 299,
+        //   "duration": "2 Days & 3 Nights"
+        // }
     ],
     "pages": {
         "about": {
@@ -201,5 +207,61 @@ module.exports = {
               { name: 'Expedia', logo: '/images/logos/expedia-logo.png', url: 'https://www.expedia.com/hotel/vip-suite-room' }
           ]
         }
-      ]
+      ],
+      "siteConfig": {
+        "title": "Enjoy Your Next Vacation at Cloud9",
+        "description": "Experience luxury and comfort like never before—your perfect stay awaits.",
+        "seo": {
+          "title": "Cloud9 Luxury Hotel - Unforgettable Stays in Paradise",
+          "description": "Experience luxury accommodations, world-class amenities, and breathtaking views at Cloud9 Hotel. Book your dream vacation today!",
+          "keywords": "luxury hotel, resort, accommodation, vacation, Cloud9, beachfront, spa, fine dining",
+          "openGraph": {
+            "title": "Cloud9 Luxury Hotel - Your Paradise Getaway",
+            "description": "Indulge in luxury accommodations, gourmet dining, and exclusive amenities at Cloud9 Hotel. Book now for an unforgettable stay!",
+            "type": "website",
+            "url": "https://www.cloud9hotel.com",
+            "image": "/images/cloud9-hotel-exterior.jpg",
+          },
+          "twitter": {
+            "card": "summary_large_image",
+            "site": "@Cloud9Hotel",
+            "title": "Cloud9 Luxury Hotel - Escape to Paradise",
+            "description": "Discover unparalleled luxury and relaxation at Cloud9 Hotel. Book your stay and create lasting memories!",
+            "image": "/images/cloud9-hotel-suite.jpg",
+          },
+          "canonicalUrl": "https://www.hotelcloud9.in",
+          "geoRegion": "US-HI",
+          "geoPosition": "21.3069;-157.8583",
+          "icbm": "21.3069, -157.8583",
+          "googleVerification": "YOUR_GOOGLE_VERIFICATION_CODE",
+          "alternateLanguage": {
+            "hrefLang": "es",
+            "href": "https://www.cloud9hotel.com/",
+          },
+          "schema": {
+            "@context": "https://schema.org",
+            "@type": "Hotel",
+            "name": "Hotel Cloud 9 Alwar",
+            "image": "https://www.hotelcloud9.in/images/gallery/1.jpg",
+            "description": "Experience luxury accommodations, world-class amenities, and breathtaking views at Hotel Cloud 9 Alwar.",
+            "starRating": {
+              "@type": "Rating",
+              "ratingValue": "5"
+            },
+            "priceRange": "$$$",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Jail circle, Opp. C.P Mall",
+              "addressLocality": "Alwar",
+              "addressRegion": "Rajasthan",
+              "postalCode": "301001",
+              "addressCountry": "IN"
+            },
+            "telephone": "+91 7232054750",
+            "url": "https://www.hotelcloud9.in",
+            "email": "admin@hotelcloud9.in"
+          },
+        },
+        "googleAnalyticsId": process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID,
+      }
 }

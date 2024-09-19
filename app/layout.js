@@ -1,4 +1,5 @@
 import Preloader from "@/layouts/Preloader";
+import Script from 'next/script';
 import "@css/all-animations.css";
 import "@css/animate.css";
 import "@css/aos.css";
@@ -48,15 +49,15 @@ export default function RootLayout({ children }) {
         <meta name="ICBM" content="21.3069, -157.8583" />
         <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE" />
         <meta name="robots" content="index, follow" />
-        <link rel="alternate" hrefLang="es" href="https://www.cloud9hotel.com/es/" />
+        <link rel="alternate" hrefLang="es" href="https://www.cloud9hotel.com/" />
         <script type="application/ld+json">
           {`
             {
               "@context": "https://schema.org",
               "@type": "Hotel",
-              "name": "Cloud9 Luxury Hotel",
-              "image": "https://www.cloud9hotel.com/images/cloud9-hotel-exterior.jpg",
-              "description": "Experience luxury accommodations, world-class amenities, and breathtaking views at Cloud9 Hotel.",
+              "name": "Hotel Cloud 9 Alwar",
+              "image": "https://www.hotelcloud9.in/images/gallery/1.jpg",
+              "description": "Experience luxury accommodations, world-class amenities, and breathtaking views at Hotel Cloud 9 Alwar.",
               "starRating": {
                 "@type": "Rating",
                 "ratingValue": "5"
@@ -64,14 +65,15 @@ export default function RootLayout({ children }) {
               "priceRange": "$$$",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "123 Paradise Beach Road",
-                "addressLocality": "Honolulu",
-                "addressRegion": "HI",
-                "postalCode": "96815",
-                "addressCountry": "US"
+                "streetAddress": "Jail circle, Opp. C.P Mall",
+                "addressLocality": "Alwar",
+                "addressRegion": "Rajasthan",
+                "postalCode": "301001",
+                "addressCountry": "IN"
               },
-              "telephone": "+1-808-555-1234",
-              "url": "https://www.cloud9hotel.com"
+              "telephone": "+91 7232054750",
+              "url": "https://www.hotelcloud9.in",
+              "email": "admin@hotelcloud9.in"
             }
           `}
         </script>
@@ -79,6 +81,18 @@ export default function RootLayout({ children }) {
       <body>
         <Preloader />
         {children}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
+          `}
+        </Script>
       </body>
     </html>
   );
