@@ -2,213 +2,117 @@ import Breadcrumb from "@/components/Breadcrumb";
 import RoveroLayout from "@/layouts/RoveroLayout";
 import { pages } from "@/utility/config";
 
-const page = () => {
+const ContactPage = () => {
   return (
     <RoveroLayout>
-     <Breadcrumb
-        pageName="contact Us"
+      <Breadcrumb
+        pageName="Contact Us"
         pageTitle={pages.contact.title}
         pageSubTitle={pages.contact.description}
         bgImage={pages.contact.image}
       />
-      <div className="contact-area contact-page mt-120">
-        <div className="container">
-          <div className="row contact-info-wrapper justify-content-center align-items-center">
-            <div className="col-xl-4 col-lg-4 col-md-4  col-sm-8 col-12 contact-info-sep position-relative mb-30">
-              <div className="contact-page-info contact-location position-relative text-center">
-                <div className="contact-icon theme-bg d-inline-block text-center mb-30 mr-0">
-                  <span className="d-inline-block">
-                    <i className="fas fa-map-marker-alt" />
-                  </span>
-                </div>
-                {/* /contact-icon */}
-                <div className="contact-text">
-                  <h4 className="mb-15">Address</h4>
-                  <p className="mb-0">
+      <div className="py-16 md:py-24 lg:py-32">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Contact Info Cards */}
+            <ContactInfoCard
+              icon="fas fa-map-marker-alt"
+              title="Address"
+              content={
+                <>
                   Jail circle, Opp. C.P Mall
-                    <br /> Alwar(Raj.) - 301001
-                  </p>
-                </div>
-              </div>
-              {/* /contact-location */}
-            </div>
-            {/* /col */}
-            <div className="col-xl-4 col-lg-4 col-md-4  col-sm-8 col-12 contact-info-sep position-relative mb-30">
-              <div className="contact-page-info contact-phone position-relative text-center">
-                <div className="contact-icon theme-bg theme-bg d-inline-block text-center mb-30 mr-0">
-                  <span className="d-inline-block">
-                    <i className="fas fa-phone-alt" />
-                  </span>
-                </div>
-                {/* /contact-icon */}
-                <div className="contact-text">
-                  <h4 className="mb-3">Phone Number</h4>
-                  <p className="mb-0">
-                    <a className="d-block" href="tell:+1234567890">
-                    +91 7232054750 (Sales)
-                    </a>
-                    <a className="d-block" href="tell:+1234567891">
-                    +91 7232054750 (Enquiry)
-                    </a>
-                  </p>
-                </div>
-              </div>
-              {/* /contact-location */}
-            </div>
-            {/* /col */}
-            <div className="col-xl-4 col-lg-4 col-md-4  col-sm-8 col-12 contact-info-sep position-relative mb-30">
-              <div className="contact-page-info contact-email text-center">
-                <div className="contact-icon theme-bg d-inline-block text-center mb-30 mr-0">
-                  <span className="d-inline-block">
-                    <i className="fas fa-envelope" />
-                  </span>
-                </div>
-                {/* /contact-icon */}
-                <div className="contact-text">
-                  <h4 className="mb-3">Email Address</h4>
-                  <p className="mb-0">
-                    <a className="d-block" href="#">
-                    admin@hotelcloud9.in
-                    </a>
-             
-                  </p>
-                </div>
-              </div>
-              {/* /contact-email */}
-            </div>
-            {/* /col */}
+                  <br /> Alwar(Raj.) - 301001
+                </>
+              }
+            />
+            <ContactInfoCard
+              icon="fas fa-phone-alt"
+              title="Phone Number"
+              content={
+                <>
+                  <a className="block" href="tel:+917232054750">+91 7232054750 (Sales)</a>
+                  <a className="block" href="tel:+917232054750">+91 7232054750 (Enquiry)</a>
+                </>
+              }
+            />
+            <ContactInfoCard
+              icon="fas fa-envelope"
+              title="Email Address"
+              content={<a className="block" href="mailto:admin@hotelcloud9.in">admin@hotelcloud9.in</a>}
+            />
           </div>
-          {/* /row */}
-          <div className="row">
-            <div className="col-xl-12  col-lg-12  col-md-12  col-sm-12 col-12">
-              <div className="contact-wrapper contact-page-form-margin pt-70">
-                <div className="contact-form">
-                  <div className="con-title">
-                    <h4 className="mb-35">Write Us Something</h4>
-                  </div>
-                  {/* /title */}
-                  <form method="POST" id="contact-form">
-                    <div className="contact-info text-md-center text-lg-left pt-20">
-                      <div className="row">
-                        <div
-                          className="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mb-3 px-md-2"
-                          data-aos="fade-up"
-                          data-aos-anchor-placement="top-bottom"
-                          data-aos-duration={2000}
-                        >
-                          <input
-                            className="name w-100 primary-border pl-20 pt-15 pb-15 pr-10"
-                            type="text"
-                            name="inputName"
-                            id="inputName"
-                            placeholder="Your Name"
-                            required=""
-                          />
-                          {/* /name */}
-                        </div>
-                        {/* /col */}
-                        <div
-                          className="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mb-3 px-md-2"
-                          data-aos="fade-up"
-                          data-aos-anchor-placement="top-bottom"
-                          data-aos-duration={2500}
-                        >
-                          <input
-                            className="email w-100 primary-border pl-20 pt-15 pb-15 pr-10"
-                            type="email"
-                            name="inputEmail"
-                            id="inputEmail"
-                            placeholder="Your Email"
-                            required=""
-                          />
-                          {/* /email */}
-                        </div>
-                        {/* /col */}
-                        <div
-                          className="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mb-3 px-md-2"
-                          data-aos="fade-up"
-                          data-aos-anchor-placement="top-bottom"
-                          data-aos-duration={2000}
-                        >
-                          <input
-                            className="website w-100 primary-border pl-20 pt-15 pb-15 pr-10"
-                            type="text"
-                            name="inputWebsite"
-                            id="inputWebsite"
-                            placeholder="Website"
-                            required=""
-                          />
-                          {/* /name */}
-                        </div>
-                        {/* /col */}
-                      </div>
-                      {/* /row */}
-                      <div className="row">
-                        <div
-                          className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-3 px-md-2"
-                          data-aos="fade-up"
-                          data-aos-anchor-placement="top-bottom"
-                          data-aos-duration={2000}
-                        >
-                          <textarea
-                            className="massage w-100 primary-border pl-20 pt-20"
-                            name="inputMessage"
-                            id="inputMessage"
-                            placeholder="Write your comment here"
-                            required=""
-                            defaultValue={""}
-                          />
-                          {/* /textarea */}
-                        </div>
-                        {/* /col */}
-                      </div>
-                      {/* /row */}
-                      <div className="my-btn w-100">
-                        <button
-                          className="btn theme-bg text-uppercase rounded-0 f-500 w-100"
-                          type="submit"
-                          name="submit"
-                          data-aos="fade-up"
-                          data-aos-anchor-placement="top-bottom"
-                          data-aos-duration={2500}
-                        >
-                          Submit now
-                        </button>
-                      </div>
-                    </div>
-                  </form>
-                  <p className="form-message mt-20" />
-                </div>
-                {/* /contact-form */}
+
+          {/* Contact Form */}
+          <div className="mt-16 md:mt-24">
+            <h4 className="text-2xl font-semibold mb-8">Write Us Something</h4>
+            <form method="POST" id="contact-form" className="space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <input
+                  className="w-full p-3 border border-gray-300 rounded"
+                  type="text"
+                  name="inputName"
+                  placeholder="Your Name"
+                  required
+                />
+                <input
+                  className="w-full p-3 border border-gray-300 rounded"
+                  type="email"
+                  name="inputEmail"
+                  placeholder="Your Email"
+                  required
+                />
+                <input
+                  className="w-full p-3 border border-gray-300 rounded"
+                  type="text"
+                  name="inputWebsite"
+                  placeholder="Website"
+                />
               </div>
-              {/* /contact-wrapper */}
-            </div>
-            {/* /col */}
-          </div>
-          {/* /row */}
-        </div>
-        {/* /container */}
-        <div className="over-hidden contact-page-map mt-100 mb-120">
-          <div className="container">
-            <div
-              className="map-wrapper w-100 z-index1 rounded-0"
-              id="mapwrapper"
-            >
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3536.4095461102866!2d76.61214317641567!3d27.580829731058444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3972993327f7a909%3A0x1c754df47f880a88!2sHotel%20Cloud%209%20Alwar!5e0!3m2!1sen!2sin!4v1726406913721!5m2!1sen!2sin" 
-                width="100%" 
-                height="450" 
-                style={{ border: 0 }} 
-                allowFullScreen="" 
-                loading="lazy" 
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            </div>
+              <textarea
+                className="w-full p-3 border border-gray-300 rounded"
+                name="inputMessage"
+                rows="5"
+                placeholder="Write your comment here"
+                required
+              ></textarea>
+              <button
+                className="w-full md:w-auto px-6 py-3 bg-blue-600 text-white font-medium rounded hover:bg-blue-700 transition duration-300"
+                type="submit"
+              >
+                Submit now
+              </button>
+            </form>
           </div>
         </div>
-        {/* /map */}
+      </div>
+
+      {/* Map */}
+      <div className="mt-16 md:mt-24 mb-16 md:mb-24">
+        <div className="container mx-auto px-4">
+          <div className="aspect-w-16 aspect-h-9">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3536.4095461102866!2d76.61214317641567!3d27.580829731058444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3972993327f7a909%3A0x1c754df47f880a88!2sHotel%20Cloud%209%20Alwar!5e0!3m2!1sen!2sin!4v1726406913721!5m2!1sen!2sin" 
+              className="w-full h-full"
+              style={{ border: 0 }} 
+              allowFullScreen="" 
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
+        </div>
       </div>
     </RoveroLayout>
   );
 };
-export default page;
+
+const ContactInfoCard = ({ icon, title, content }) => (
+  <div className="bg-white p-6 rounded-lg shadow-md text-center">
+    <div className="inline-block bg-blue-600 text-white p-4 rounded-full mb-4">
+      <i className={`${icon} text-2xl`} />
+    </div>
+    <h4 className="text-xl font-semibold mb-2">{title}</h4>
+    <div className="text-gray-600">{content}</div>
+  </div>
+);
+
+export default ContactPage;
