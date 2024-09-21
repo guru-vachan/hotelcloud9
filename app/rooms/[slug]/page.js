@@ -126,7 +126,7 @@ const RoomDetails = ({ params }) => {
               <div className="p-6 border-b">
                 <h4 className="text-2xl font-semibold mb-2">Book Now</h4>
                 <p className="text-gray-600 mb-4">Best price guaranteed</p>
-                <p className="text-3xl font-bold text-green-600 mb-2">${roomData.price}<span className="text-sm font-normal text-gray-500">/night</span></p>
+                <p className="text-3xl font-bold text-green-600 mb-2">₹{roomData.price}<span className="text-sm font-normal text-gray-500">/night</span></p>
               </div>
               <ul className="divide-y">
                 {bookingPlatforms.map((platform, index) => (
