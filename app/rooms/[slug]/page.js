@@ -19,7 +19,7 @@ const RoomDetails = ({ params }) => {
   const bookingPlatforms = [
     { name: 'Book Direct', logo: 'https://example.com/path-to-your-hotel-logo.png', key: 'direct' },
     { name: 'Booking.com', logo: 'https://q-xx.bstatic.com/xdata/images/xphoto/300x300/132270687.jpg?k=4eca6f8c0a6a7a2ce3b3d5f3ea19e94e64b5e3d0f3e7a0d1f9f7cb6b4b6b7b7b&o=', key: 'bookingCom' },
-    { name: 'Airbnb', logo: 'https://a0.muscache.com/airbnb/static/logos/belo-200x200-4d851c5b28f61931bf1df28dd15e60ef.png', key: 'airbnb' },
+    { name: 'Airbnb', logo: 'https://a0.muscache.com/airbnb/static/logos/belo-200x200-4d851c5b28f61931bf1df28dd15e60ef.png', key: 'Airbnb' },
     { name: 'Expedia', logo: 'https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg', key: 'expedia' },
   ];
 
