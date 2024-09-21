@@ -56,7 +56,8 @@ const page = () => {
                 <div className="about-hm2-img position-relative over-hidden img-hover-effect2">
                   <img
                     className="tilt w-full"
-                    src="images/about/hm2-about-img.jpg"
+                    //src="images/about/hm2-about-img.jpg"
+                    src="images/about/MD.png"
                     alt="about image"
                   />
                 </div>
@@ -86,7 +87,7 @@ const page = () => {
                       <img src="images/about/signature.png" alt="signature" className="max-w-full h-auto" /> {/* Made image responsive */}
                     </div>
                     <div className="about-footer-content-right text-center sm:text-left">
-                      <h6 className="inline-block pr-2 mb-0">Pawan Kumar Jain</h6>
+                      <h6 className="pr-2 mb-0">Pawan Kumar Jain</h6>
                       <span className="meta-text-color">Managing Director</span>
                     </div>
                   </div>
