@@ -86,7 +86,7 @@ const page = () => {
                       <img src="images/about/signature.png" alt="signature" className="max-w-full h-auto" /> {/* Made image responsive */}
                     </div>
                     <div className="about-footer-content-right text-center sm:text-left">
-                      <h6 className="inline-block pr-2 mb-0">Guru Vachan</h6>
+                      <h6 className="inline-block pr-2 mb-0">Pawan Kumar Jain</h6>
                       <span className="meta-text-color">Managing Director</span>
                     </div>
                   </div>

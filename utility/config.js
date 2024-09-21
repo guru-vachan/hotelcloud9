@@ -3,13 +3,13 @@ module.exports = {
     "description": "Experience luxury and comfort like never before—your perfect stay awaits.",
     "tile" : [
         {
-            "heading": "Welcome to afdfCloud9",
+            "heading": "Welcome to Cloud9",
             "title": "Enjoy Your Next Vacation at Cloud9",
             "description": "Experience luxury and comfort like never before—your perfect stay awaits.",
             "image":  "/images/gallery/32.webp",
         },
         {
-          "heading": "Welcome to Csadfasfdloud9",
+          "heading": "Welcome to Cloud9",
           "title": "Enjoy Your Next Vacation at Cloud9",
           "description": "Experience luxury and comfort like never before—your perfect stay awaits.",
           "image":  "/images/gallery/1.jpg",
@@ -88,12 +88,52 @@ module.exports = {
         }, 
     },
     "rooms": [
+     {
+              "id": 1,
+              "slug": "premium-room",
+              "imageUrl":  "/images/room-2/2.jpg",
+              "title": "Premium Room",
+              "description": "Enjoy unrivaled luxury in our Premium Room—elegant decor, exceptional comfort, and top-tier amenities.",
+              "price": 3299,
+              "reverse": true,
+              "bgImage":  "/images/room-2/1.jpg",
+              "size": "40 sf",
+              "capacity": "2 Guests",
+              "beds": "1 King Bed",
+              "view": "City View",
+              "rating": 4.8,
+              "reviews": 12,
+              "longDescription": "Our Premium Room offers an unparalleled luxury experience. Enjoy breathtaking ocean views from your private balcony. The room features elegant decor, a spacious living area, and a luxurious bathroom with a deep soaking tub and separate shower. Premium amenities and personalized service ensure a truly memorable stay.",
+              "facilities": [
+                { "name": "Free Wi-Fi", "icon": "wifi" }, // Lucid icon
+                { "name": "Flat-screen TV", "icon": "tv" }, // Lucid icon
+                { "name": "Coffee maker", "icon": "coffee" }, // Lucid icon
+                { "name": "In-room safe", "icon": "lock" }, // Lucid icon
+                { "name": "Air conditioning", "icon": "wind" }, // Lucid icon
+                { "name": "24-hour room service", "icon": "utensils" } // Font Awesome icon
+              ],
+              "galleryImages": [
+                "/images/room-2/1.jpg",
+                "/images/room-2/2.jpg",
+                "/images/room-2/3.jpg",
+                "/images/room-2/4.jpg",
+                "/images/room-2/5.jpg",
+                "/images/room-2/6.jpg",
+                "/images/room-2/7.jpg",
+              ],
+              "bookingUrls": [
+                  { name: 'Book Direct', logo: '/images/logos/hotel-logo.png', url: '/booking/super-premium' },
+                  { name: 'Booking.com', logo: '/images/logos/booking-logo.png', url: 'https://www.booking.com/hotel/super-premium' },
+                  { name: 'Airbnb', logo: '/images/logos/airbnb-logo.png', url: 'https://www.airbnb.com/rooms/super-premium' },
+                  { name: 'Expedia', logo: '/images/logos/expedia-logo.png', url: 'https://www.expedia.com/hotel/super-premium' }
+              ]
+            },
         {
-          "id": 1,
-          "slug": "premium-room",
+          "id": 2,
+          "slug": "super-premium",
           "imageUrl": "/images/room-1/3.jpg",
-          "title": "Premium Room",
-          "description": "Indulge in our Premium Room—luxurious space with stunning views, upscale amenities, and unmatched comfort.",
+          "title": "Super Premium Room",
+          "description": "Indulge in our Super Premium Room—luxurious space with stunning views, upscale amenities, and unmatched comfort.",
           "price": 2749,
           "reverse": false,
           "bgImage":  "/images/room-1/2.jpg",
@@ -103,11 +143,10 @@ module.exports = {
           "view": "City View",
           "rating": 4.5,
           "reviews": 8,
-          "longDescription": "Experience luxury and comfort in our Premium Room. This spacious accommodation offers stunning city views and is equipped with modern amenities to ensure a memorable stay. The room features a plush king-size bed, a work desk, and a seating area. The en-suite bathroom includes a rain shower and premium toiletries.",
+          "longDescription": "Experience luxury and comfort in our Super Premium Room. This spacious accommodation offers stunning city views and is equipped with modern amenities to ensure a memorable stay. The room features a plush king-size bed, a work desk, and a seating area. The en-suite bathroom includes a rain shower and premium toiletries.",
           "facilities": [
             { "name": "Free Wi-Fi", "icon": "wifi" }, // Lucid icon
             { "name": "Flat-screen TV", "icon": "tv" }, // Lucid icon
-            { "name": "Mini-bar", "icon": "wine" }, // Lucid icon
             { "name": "Coffee maker", "icon": "coffee" }, // Lucid icon
             { "name": "In-room safe", "icon": "lock" }, // Lucid icon
             { "name": "Air conditioning", "icon": "wind" }, // Lucid icon
@@ -128,47 +167,6 @@ module.exports = {
           ]
         },
         {
-          "id": 2,
-          "slug": "super-premium",
-          "imageUrl":  "/images/room-2/2.jpg",
-          "title": "Super Premium",
-          "description": "Enjoy unrivaled luxury in our Super Premium Room—elegant decor, exceptional comfort, and top-tier amenities.",
-          "price": 3299,
-          "reverse": true,
-          "bgImage":  "/images/room-2/1.jpg",
-          "size": "40 sf",
-          "capacity": "2 Guests",
-          "beds": "1 King Bed",
-          "view": "Ocean View",
-          "rating": 4.8,
-          "reviews": 12,
-          "longDescription": "Our Super Premium Room offers an unparalleled luxury experience. Enjoy breathtaking ocean views from your private balcony. The room features elegant decor, a spacious living area, and a luxurious bathroom with a deep soaking tub and separate shower. Premium amenities and personalized service ensure a truly memorable stay.",
-          "facilities": [
-            { "name": "Free Wi-Fi", "icon": "wifi" }, // Lucid icon
-            { "name": "Flat-screen TV", "icon": "tv" }, // Lucid icon
-            { "name": "Mini-bar", "icon": "wine" }, // Lucid icon
-            { "name": "Coffee maker", "icon": "coffee" }, // Lucid icon
-            { "name": "In-room safe", "icon": "lock" }, // Lucid icon
-            { "name": "Air conditioning", "icon": "wind" }, // Lucid icon
-            { "name": "24-hour room service", "icon": "utensils" } // Font Awesome icon
-          ],
-          "galleryImages": [
-            "/images/room-2/1.jpg",
-            "/images/room-2/2.jpg",
-            "/images/room-2/3.jpg",
-            "/images/room-2/4.jpg",
-            "/images/room-2/5.jpg",
-            "/images/room-2/6.jpg",
-            "/images/room-2/7.jpg",
-          ],
-          "bookingUrls": [
-              { name: 'Book Direct', logo: '/images/logos/hotel-logo.png', url: '/booking/super-premium' },
-              { name: 'Booking.com', logo: '/images/logos/booking-logo.png', url: 'https://www.booking.com/hotel/super-premium' },
-              { name: 'Airbnb', logo: '/images/logos/airbnb-logo.png', url: 'https://www.airbnb.com/rooms/super-premium' },
-              { name: 'Expedia', logo: '/images/logos/expedia-logo.png', url: 'https://www.expedia.com/hotel/super-premium' }
-          ]
-        },
-        {
           "id": 3,
           "slug": "vip-suite-room",
           "imageUrl": "/images/room-3/3.jpg",
@@ -180,14 +178,13 @@ module.exports = {
           "size": "60 sf",
           "capacity": "4 Guests",
           "beds": "1 King Bed, 1 Sofa Bed",
-          "view": "Panoramic Ocean View",
+          "view": "Panoramic Mountain View",
           "rating": 5,
           "reviews": 15,
           "longDescription": "Our VIP Suite Room is the epitome of luxury and exclusivity. This spacious suite features a separate living room, dining area, and a master bedroom with a walk-in closet. Enjoy panoramic ocean views from your large private terrace. The marble bathroom includes a Jacuzzi tub and a rain shower. Exclusive VIP services and amenities are provided for an unforgettable stay.",
           "facilities": [
             { "name": "Free Wi-Fi", "icon": "wifi" }, // Lucid icon
             { "name": "Flat-screen TV", "icon": "tv" }, // Lucid icon
-            { "name": "Mini-bar", "icon": "wine" }, // Lucid icon
             { "name": "Coffee maker", "icon": "coffee" }, // Lucid icon
             { "name": "In-room safe", "icon": "lock" }, // Lucid icon
             { "name": "Air conditioning", "icon": "wind" }, // Lucid icon
@@ -247,7 +244,7 @@ module.exports = {
               "@type": "Rating",
               "ratingValue": "5"
             },
-            "priceRange": "$$$",
+            "priceRange": "₹₹₹",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Jail circle, Opp. C.P Mall",
