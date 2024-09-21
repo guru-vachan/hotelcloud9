@@ -137,7 +137,6 @@ const RoomDetails = ({ params }) => {
                       rel="noopener noreferrer"
                       className="flex items-center justify-between p-4 hover:bg-gray-50 transition-colors duration-200"
                     >
-                    console.log({roomData})
                       <div className="flex items-center">
                         {/* <Image
                           src={platform.logo}
