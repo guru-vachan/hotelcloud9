@@ -122,9 +122,9 @@ module.exports = {
                 "/images/room-2/7.jpg",
               ],
               "bookingUrls": [
-                  { name: 'Book Direct', logo: '/images/logos/hotel-logo.png', url: '/booking/super-premium' },
+                  { name: 'Book Direct', logo: '/images/logos/hotel-logo.png', url: 'https://www.goibibo.com/hotels/cloud-9-hotel-in-alwar-1339432424129250907/' },
                   { name: 'Booking.com', logo: '/images/logos/booking-logo.png', url: 'https://www.booking.com/hotel/super-premium' },
-                  { name: 'Airbnb', logo: '/images/logos/airbnb-logo.png', url: 'https://www.airbnb.com/rooms/super-premium' },
+                  { name: 'Airbnb', logo: '/images/logos/airbnb-logo.png', url: 'https://www.agoda.com/hotel-cloud-9/hotel/alwar-in.html' },
                   { name: 'Expedia', logo: '/images/logos/expedia-logo.png', url: 'https://www.expedia.com/hotel/super-premium' }
               ]
             },
@@ -210,7 +210,7 @@ module.exports = {
         "seo": {
           "title": "Cloud9 Luxury Hotel - Unforgettable Stays in Paradise",
           "description": "Experience luxury accommodations, world-class amenities, and breathtaking views at Cloud9 Hotel. Book your dream vacation today!",
-          "keywords": "luxury hotel, resort, accommodation, vacation, Cloud9, beachfront, spa, fine dining",
+          "keywords": "luxury hotel, resort, accommodation, vacation, Cloud9, beachfront, spa, fine dining, hotel in alwar",
           "openGraph": {
             "title": "Cloud9 Luxury Hotel - Your Paradise Getaway",
             "description": "Indulge in luxury accommodations, gourmet dining, and exclusive amenities at Cloud9 Hotel. Book now for an unforgettable stay!",
